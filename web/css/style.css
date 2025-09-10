@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
+}
+li{
+    list-style: none;
+}
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* toppest nav */
+header{
+    padding:0 3rem;
+    position: absolute;
+    /* top: 3rem; */
+    width: 100%;
+    z-index: 99;
+}
+
+.toppest{
+    background-color: #194A33;
+    padding: 0.75rem 2rem;
+    color:#fff;
+    font-size: 14px;
+     font-weight: 500;
+}
+nav img{
+    /* margin-right: 6rem; */
+    transform: translateX(-100%);
+   
+}
+.bi-list {
+    color: #fff;
+    font-size: 1.5rem;
+}
+ .iconsnavlist{
+    display: flex;
+    align-items: center;
+    
+}
+.mainlist li{
+    margin-right: 2rem;
+}
+
+.mainlist li a{
+color: #fff;
+font-size: 14px;
+font-weight: 500;
+}
+.iconsnavlist li{
+    margin-left: 1rem;
+    color: #fff;
+}
+.iconsnavlist li i{
+   font-size: 1.5rem;
+}
+.iconsnavlist small{
+    font-size: 12px;
+}
+@media (max-width:768px) {
+     header{
+       padding:0 1rem; 
+    }
+    .toppest{
+       padding:1rem; 
+    }
+}
+/* hero section */
+.herosec{
+    background-image: url(../images/heroimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+     background-attachment: fixed; 
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
+
+.herosec > div{
+height: 100%;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.127);
+padding-left: 2rem;
+}
+
+.herotext{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-25%);
+}
+.herotext span{
+    color: #3db77e;
+    font-size: 14px;
+    font-weight: 500;
+}
+.herotext h1{
+    font-size: 4rem;
+    color: #fff;
+    letter-spacing: -1;
+    font-weight: 700;
+}
+@media (max-width:576px) {
+   .herotext h1{
+font-size: 3rem ;
+   } 
+}
+.herotext p{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.herobtn a, .herobtn a i::before{
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+@media (max-width:768px) {
+   .herosec > div{
+      padding-left: 1rem;
+    }
+    .herotext{
+        transform: translateY(-25%);
+    }
+}
+
+/* about us section */
+.aboutussec{
+    background-image: url(../images/aboutimg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #194A33;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutussec > div {
+    width: 40%;
+}
+@media (max-width:1200px) {
+    .aboutussec > div {
+    width: 55%;
+}
+}
+@media (max-width:992px) {
+    .aboutussec > div {
+    width: 70%;
+}
+}
+@media (max-width:768px) {
+    .aboutussec > div {
+        padding: 0 1rem;
+    width: 100%;
+}
+}
+
+.aboutussec span{
+     color: #3db77e;
+    font-size: 14px;
+    font-weight: 500;
+}
+.aboutussec h1{
+ font-size: 3.25rem;
+    color: #fff;
+    letter-spacing: -1;
+    font-weight: 700;
+}
+@media (max-width:576px) {
+   .aboutussec h1{
+font-size: 2rem ;
+   } 
+}
+.aboutussec p{
+    color: #fff;
+}
+
+/* shop our teas */
+.shopouttras .container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.shopouttras h1{
+    color: #194A33;
+    text-align: center;
+}
+.soteascateg{
+width: 50%;
+margin-top: 2rem;
+}
+@media (max-width:992px) {
+    .soteascateg{
+width: 100%;
+}
+}
+.soteascateg ul li a{
+color: #194A33;
+}
+.stars{
+    color: goldenrod;
+}
+.cd{
+    background-color: rgba(246, 246, 246, 1);
+    
+}
+.cd > div{
+    overflow: hidden;
+     position: relative;
+}
+.imgattop{
+    position: relative;
+   z-index: 1;
+   transition: 0.3s;
+   opacity: 1;
+}
+.imgatbottom{
+    position: absolute;
+top: 0;
+left: 0;
+transition:3s;
+}
+.cd:hover .imgatbottom{
+transform: scale(1.2);
+}
+.cd:hover .imgattop{
+opacity: 0;
+}
+.ddiv{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    z-index: 2;
+   
+}
+.ddiv span{
+    font-size: 12px;
+    color: #fff;
+      background-color: rgba(214, 25, 88, 0.725);
+      padding:0.35rem 0.75rem;
+      border-radius: 5px;
+}
+.ddiv i{
+   background-color: #fff;
+   padding: 0.5rem;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   transition: 0.3s;
+}
+.cd:hover .ddiv i{
+opacity: 1;
+}
+.addtocardbtn{
+    padding: 0.5rem 0.75rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.cd:hover .addtocardbtn{
+    background-color: #194A33;
+    color: #fff;
+}
+.headingimg{
+    background-image: url(../images/headingimg1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 100%;
+
+}
