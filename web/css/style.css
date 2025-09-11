@@ -10,7 +10,7 @@ ul{
     margin-bottom: 0;
     padding-left: 0;
 }
-li{
+ul li{
     list-style: none;
 }
 
@@ -26,8 +26,8 @@ li{
 /* toppest nav */
 header{
     padding:0 3rem;
-    position: absolute;
-    /* top: 3rem; */
+/* background-color: #03050e; */
+position: absolute;
     width: 100%;
     z-index: 99;
 }
@@ -39,39 +39,62 @@ header{
     font-size: 14px;
      font-weight: 500;
 }
-nav img{
-    /* margin-right: 6rem; */
-    transform: translateX(-100%);
-   
+.dropdwn{
+    position: relative;
+}
+.sublist{
+    position: absolute;
+    /* left: -25%; */
+   left: 0;
+    margin-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    width: 280px;
+    background-color: #fff;
+    padding:0 2rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.sublist li{
+   margin-left: 0 !important;
+border-bottom: 2px solid lightgray;
+border-radius: 0 !important;
+padding: 1rem 0 !important;
+}
+.itsdrop{
+    display: inline-block;
+    transition: 0.3s;
+}
+.dropdwn:hover .sublist{
+opacity: 1;
+visibility: visible;
+}
+.dropdwn:hover .itsdrop{
+    transform: rotate(90deg);
 }
 .bi-list {
     color: #fff;
     font-size: 1.5rem;
 }
- .iconsnavlist{
-    display: flex;
-    align-items: center;
-    
-}
-.mainlist li{
-    margin-right: 2rem;
-}
 
+.mainlist li{
+    margin-left: 2rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+.mainlist li:hover{
+   background-color: #fff;
+}
+.mainlist li:hover a{
+color: #03050e;
+}
 .mainlist li a{
 color: #fff;
 font-size: 14px;
 font-weight: 500;
+
 }
-.iconsnavlist li{
-    margin-left: 1rem;
-    color: #fff;
-}
-.iconsnavlist li i{
-   font-size: 1.5rem;
-}
-.iconsnavlist small{
-    font-size: 12px;
-}
+
 @media (max-width:768px) {
      header{
        padding:0 1rem; 
@@ -198,7 +221,9 @@ font-size: 2rem ;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
+
 .shopouttras h1{
     color: #194A33;
     text-align: center;
@@ -215,13 +240,7 @@ width: 100%;
 .soteascateg ul li a{
 color: #194A33;
 }
-.stars{
-    color: goldenrod;
-}
-.cd{
-    background-color: rgba(246, 246, 246, 1);
-    
-}
+
 .cd > div{
     overflow: hidden;
      position: relative;
@@ -244,54 +263,165 @@ transform: scale(1.2);
 .cd:hover .imgattop{
 opacity: 0;
 }
-.ddiv{
+
+.stars{
+    color: goldenrod;
+}
+.headingimgmain{
+    padding: 0 2rem;
+}
+@media (max-width:768px) {
+    .headingimgmain{
+    padding: 0;
+}
+
+}
+.headingimgdiv{
+    /* background-color: rgba(0, 0, 0, 0.023); */
+height: 100%;
+width: 100%;
+position: absolute;
+transition: 0.5s;
+top: 0;
+left: 0;
+}
+.headingimgdiv > div {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    top: 0.5rem;
-    left: 0.5rem;
-    right: 0.5rem;
-    z-index: 2;
-   
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
 }
-.ddiv span{
-    font-size: 12px;
+@media (max-width:576px) {
+    .headingimgdiv > div {
+    transform: translate(-25%,-50%);
+}
+}
+.headingimg{
+     width: 100%;
+      height: 40vh;
+       position: relative;
+       overflow: hidden;
+       
+}
+.headingimg::before{
+    content: "";
+    background-image: url(../images/headingimg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+.headingimg:hover::before{
+    transform: scale(1.2);
+}
+.headingimg:hover .headingimgdiv{
+     background-color: rgba(0, 0, 0, 0.023);
+}
+.headingimgdiv h1{
+    color: #000;
+    text-align: start;
+}
+.headingimgdiv p{
+    color: #6f6e6e;
+    text-align: start;
+    
+}
+.headingimgdiv a{
+    color: #194A33;
+    text-align: start;
+    
+}
+
+.whyus{
+    background-color: #194A33; 
+    width: 100%;
     color: #fff;
-      background-color: rgba(214, 25, 88, 0.725);
-      padding:0.35rem 0.75rem;
-      border-radius: 5px;
 }
-.ddiv i{
-   background-color: #fff;
-   padding: 0.5rem;
-   border-radius: 50%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   opacity: 0;
-   transition: 0.3s;
+
+/* Find the right tea for you */
+
+.videocnt span{
+     color: #3db77e;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
-.cd:hover .ddiv i{
-opacity: 1;
+.videocnt h1{
+ font-size: 3.25rem;
+    color: #fff;
+filter: brightness(100%);
+    letter-spacing: -1;
+    font-weight: 700;
 }
-.addtocardbtn{
-    padding: 0.5rem 0.75rem;
-    border-radius: 50%;
+
+.videocnt p{
+    color: #fff;
+}
+@media (max-width:576px) {
+   .videocnt h1{
+font-size: 2rem ;
+   } 
+}
+.transformdiv{
+    transform: translateY(15%);
+    transition: 0.5s;
+    padding-bottom: 4px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.transformdivmain:hover .transformdiv{
+    transform: translateY(0);
+}
+
+/* contact form */
+.frm{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    flex-direction: column;
+    width: 50%;
+    position: relative;
 }
-.cd:hover .addtocardbtn{
-    background-color: #194A33;
-    color: #fff;
-}
-.headingimg{
-    background-image: url(../images/headingimg1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 40vh;
+.frm input, .frm textarea{
     width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.contactfrmheading h1{
+ color: #194A33;
+   
+}
+.contactfrm .img1{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    
+}
+.contactfrm .img2{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+@media (max-width:375px) {
+    .contactfrm .img1{
+width: 100vw;
+    }
+}
 
+@media (max-width:576px) {
+   .frm{
+width: 90% !important;
+    }
+}
+@media (max-width:768px) {
+   .frm{
+width: 70%;
+    }
 }

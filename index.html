@@ -2,51 +2,49 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="web/css/style.css">
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="web/css/style.css" />
 </head>
 
 <body class="roboto-font">
-
     <!-- toppest navbar -->
     <section class="toppest">
         <span>Guardians of Pure Taste</span>
     </section>
     <header>
         <nav class="d-flex align-items-center justify-content-between">
+            <div>
+                <img src="web/images/chaigpt-removebg-preview.png" width="100" alt="" />
+            </div>
             <div class="d-flex align-items-center justify-content-between">
-                <ul class="mainlist d-none d-xl-flex align-items-center">
+                <ul class="mainlist d-none d-lg-flex align-items-center">
                     <li><a href="">HOME</a></li>
-                    <li><a href="">SHOP</a></li>
-                    <li><a href="">BLOG</a></li>
+                    <li class="dropdwn"><a href="">SERVICES <i class="bi bi-chevron-right itsdrop"></i></a>
+                        <ul class="sublist">
+                            <li><a href="">Franchise</a></li>
+                            <li><a href="">RETAIL</a></li>
+                            <li><a href="">LUXE EXPERIENCES</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">OUR GALLERY</a></li>
                     <li><a href="">ABOUT US</a></li>
                     <li><a href="">CONTACT US</a></li>
                     <!-- make 404 page -->
                 </ul>
-                <i class="bi bi-list d-xl-none"></i>
-               
+                <i class="bi bi-list d-lg-none"></i>
             </div>
-            <div>
-                 <img src="web/images/chaigptlogo-removebg-preview.png" width="100" alt="">
-            </div>
-            <div>
-                <ul class="iconsnavlist">
-                    <li><i class="bi bi-search d-none d-xl-block"></i></li>
-                    <li><i class="bi bi-person d-none d-xl-block"></i></li>
-                    <li><i class="bi bi-heart d-none d-xl-block"></i></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-bag"></i><small>(4)</small></li>
-                </ul>
-            </div>
+           
         </nav>
     </header>
 
@@ -55,15 +53,17 @@
         <div>
             <div class="herotext">
                 <span>ORGANIC GREEN TEA</span>
-                <h1>Start Your
-                    <br>
+                <h1>
+                    Start Your
+                    <br />
                     Relaxing Life
-                    <br>
+                    <br />
                     Today
                 </h1>
                 <p>The wonderful taste of life.</p>
                 <div class="herobtn">
-                    <a href="" class="btn btn-light py-3 px-4">Shop Our Teas <i class="bi bi-chevron-right"></i></a>
+                    <a href="" class="btn btn-success border-white py-3 px-4">Shop Our Teas <i
+                            class="bi bi-chevron-right"></i></a>
                 </div>
             </div>
         </div>
@@ -73,293 +73,197 @@
     <section class="aboutussec">
         <div>
             <span>ABOUT US</span>
-            <h1>Welcome to Our
-                <br>
+            <h1>
+                Welcome to Our
+                <br />
                 Tea Store
             </h1>
-            <p>We are a family run company founded on a passion for tea. Our Chairman made a promise to never sell tea
-                he wouldn’t drink at home. Learn how we stay true to those values in everything we do.</p>
-                 <div class="herobtn">
-                    <a href="" class="btn btn-outline-success text-white py-3 px-4">Learn More <i class="bi bi-chevron-right"></i></a>
-                </div>
+            <p>
+                We are a family run company founded on a passion for tea. Our Chairman
+                made a promise to never sell tea he wouldn’t drink at home. Learn how
+                we stay true to those values in everything we do.
+            </p>
+            <div class="herobtn">
+                <a href="" class="btn btn-outline-success border-white text-white py-3 px-4">Learn More <i
+                        class="bi bi-chevron-right"></i></a>
             </div>
+        </div>
     </section>
 
     <!-- Shop Our Teas -->
-     <section class="shopouttras my-5">
+    <section class="shopouttras my-5">
         <div class="container-fluid">
             <div>
                 <h1>Shop Our Teas</h1>
             </div>
             <div class="soteascateg">
-                <ul class="d-flex align-items-center justify-content-sm-evenly justify-content-between">
-                    <li><a href="">New-In</a></li>
-                    <li><a href="">Best Seller</a></li>
-                    <li><a href="">Most Popular</a></li>
+                <ul class="d-flex flex-wrap gap-4 gap-sm-5 align-items-center justify-content-center">
+                    <li><a href="" class="btn btn-outline-success">Franchise</a></li>
+                    <li><a href="" class="btn btn-outline-success">Retail</a></li>
+                    <li><a href="" class="btn btn-outline-success">Luxe Experiences</a></li>
                 </ul>
             </div>
 
-            <div class="row g-3 px-3 my-5">
-                <div class="col-xl-3 col-md-4 col-sm-6">
+            <div class="row mt-5">
+                <div class="col-lg-5">
                     <div class="cd">
                         <div>
-                            <img src="web/images/products/product1newin.jpg" class="img-fluid imgattop" alt="">
-                            <img src="web/images/products/product12newin.jpg" class="img-fluid imgatbottom"  alt="">
-                            <div class="ddiv ">
-                                <span>30% off</span>
-                                <i class="bi bi-heart"></i>
-                            </div>
-
-                        </div>
-                        <div class="p-3 d-flex align-items-end">
-                            <div>
-                        <div class="d-flex stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <span>$4.00-$28.00</span>
-                        </div>
-                        </div>
-                        <div class="addtocardbtn">
-                          <i class="bi bi-bag"></i>  
-                        </div>
+                            <img src="web/images/products/product1newin.jpg" class="img-fluid imgattop" alt="" />
+                            <img src="web/images/products/product12newin.jpg" class="img-fluid imgatbottom" alt="" />
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="cd">
-                        <div>
-                            <img src="web/images/products/product1newin.jpg" class="img-fluid imgattop" alt="">
-                            <img src="web/images/products/product12newin.jpg" class="img-fluid imgatbottom"  alt="">
-                            <div class="ddiv ">
-                                <span>30% off</span>
-                                <i class="bi bi-heart"></i>
-                            </div>
+                <div class="transformdivmain col-lg-7 pb-1 pb-sm-0 mt-lg-0 mt-3 d-flex align-items-end justify-content-center" style="overflow: hidden; position: relative;border: 1px solid lightgray;">
+                    <div class="">
+                        <div style="position: absolute; top: 0; background-color: #2e895e; color: #fff; padding: 0.75rem 1rem; border-radius: 0 0 10px 10px;">
+                            <h4>Franchise</h4>
+                        </div>
+                       <div class="transformdiv ">
+                    <div>
+                        <h1 class="text-start">Become a Franchise Partner</h1>
+                        <p class=" mb-3 fw-normal">Join us in spreading the love of authentic tea blends.</p>
+                    </div>
 
+                    <div class="">
+                        <h2 class="mb-3">How to Start</h2>
+                        <ol class="steps">
+                            <li>Fill out the franchise application form.</li>
+                            <li>Our team will review your application and connect with you.</li>
+                            <li>Finalize agreement and location setup.</li>
+                            <li>Training & launch support provided by our experts.</li>
+                        </ol>
+                        <div class="herobtn mt-3">
+                            <a href="" class="btn btn-success py-3 px-4">Contact Now <i class="bi bi-chevron-right"></i></a>
                         </div>
-                        <div class="p-3 d-flex align-items-end">
-                            <div>
-                        <div class="d-flex stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
+                    </div>
+                     <div class="herobtn mt-3">
+                            <a href="" class="btn btn-success py-3 px-4 w-75">Learn More <i class="bi bi-chevron-right"></i></a>
                         </div>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <span>$4.00-$28.00</span>
+</div>
+</div> 
+                </div>
+
+                <div class="whyus py-5">
+                    <h2 class="text-center mb-4">Why Partner With Us?</h2>
+                    <div class="row g-4 text-center why-us">
+                        <div class="col-md-4">
+                            <i class="bi bi-cup-hot-fill"></i>
+                            <h5 class="mt-2">Trusted Brand</h5>
+                            <p>Recognized for authentic flavors and premium quality teas.</p>
                         </div>
+                        <div class="col-md-4">
+                            <i class="bi bi-people-fill"></i>
+                            <h5 class="mt-2">Strong Support</h5>
+                            <p>We provide complete training, marketing, and operational support.</p>
                         </div>
-                        <div class="addtocardbtn">
-                          <i class="bi bi-bag"></i>  
-                        </div>
+                        <div class="col-md-4">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            <h5 class="mt-2">Profitable Business</h5>
+                            <p>High growth potential with low investment risks.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="cd">
-                        <div>
-                            <img src="web/images/products/product1newin.jpg" class="img-fluid imgattop" alt="">
-                            <img src="web/images/products/product12newin.jpg" class="img-fluid imgatbottom"  alt="">
-                            <div class="ddiv ">
-                                <span>30% off</span>
-                                <i class="bi bi-heart"></i>
-                            </div>
 
-                        </div>
-                        <div class="p-3 d-flex align-items-end">
-                            <div>
-                        <div class="d-flex stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                        </div>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <span>$4.00-$28.00</span>
-                        </div>
-                        </div>
-                        <div class="addtocardbtn">
-                          <i class="bi bi-bag"></i>  
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="cd">
-                        <div>
-                            <img src="web/images/products/product1newin.jpg" class="img-fluid imgattop" alt="">
-                            <img src="web/images/products/product12newin.jpg" class="img-fluid imgatbottom"  alt="">
-                            <div class="ddiv ">
-                                <span>30% off</span>
-                                <i class="bi bi-heart"></i>
-                            </div>
-
-                        </div>
-                        <div class="p-3 d-flex align-items-end">
-                            <div>
-                        <div class="d-flex stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <span>$4.00-$28.00</span>
-                        </div>
-                        </div>
-                        <div class="addtocardbtn">
-                          <i class="bi bi-bag"></i>  
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="cd">
-                        <div>
-                            <img src="web/images/products/product1newin.jpg" class="img-fluid imgattop" alt="">
-                            <img src="web/images/products/product12newin.jpg" class="img-fluid imgatbottom"  alt="">
-                            <div class="ddiv ">
-                                <span>30% off</span>
-                                <i class="bi bi-heart"></i>
-                            </div>
-
-                        </div>
-                        <div class="p-3 d-flex align-items-end">
-                            <div>
-                        <div class="d-flex stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                        </div>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <span>$4.00-$28.00</span>
-                        </div>
-                        </div>
-                        <div class="addtocardbtn">
-                          <i class="bi bi-bag"></i>  
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="cd">
-                        <div>
-                            <img src="web/images/products/product1newin.jpg" class="img-fluid imgattop" alt="">
-                            <img src="web/images/products/product12newin.jpg" class="img-fluid imgatbottom"  alt="">
-                            <div class="ddiv ">
-                                <span>30% off</span>
-                                <i class="bi bi-heart"></i>
-                            </div>
-
-                        </div>
-                        <div class="p-3 d-flex align-items-end">
-                            <div>
-                        <div class="d-flex stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                        </div>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <span>$4.00-$28.00</span>
-                        </div>
-                        </div>
-                        <div class="addtocardbtn">
-                          <i class="bi bi-bag"></i>  
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="cd">
-                        <div>
-                            <img src="web/images/products/product1newin.jpg" class="img-fluid imgattop" alt="">
-                            <img src="web/images/products/product12newin.jpg" class="img-fluid imgatbottom"  alt="">
-                            <div class="ddiv ">
-                                <span>30% off</span>
-                                <i class="bi bi-heart"></i>
-                            </div>
-
-                        </div>
-                        <div class="p-3 d-flex align-items-end">
-                            <div>
-                        <div class="d-flex stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <span>$4.00-$28.00</span>
-                        </div>
-                        </div>
-                        <div class="addtocardbtn">
-                          <i class="bi bi-bag"></i>  
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="cd">
-                        <div>
-                            <img src="web/images/products/product1newin.jpg" class="img-fluid imgattop" alt="">
-                            <img src="web/images/products/product12newin.jpg" class="img-fluid imgatbottom"  alt="">
-                            <div class="ddiv ">
-                                <span>30% off</span>
-                                <i class="bi bi-heart"></i>
-                            </div>
-
-                        </div>
-                        <div class="p-3 d-flex align-items-end">
-                            <div>
-                        <div class="d-flex stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                        </div>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <span>$4.00-$28.00</span>
-                        </div>
-                        </div>
-                        <div class="addtocardbtn">
-                          <i class="bi bi-bag"></i>  
-                        </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="w-100 px-3">
-            <div class="headingimg ">
+
+
+
+
+            <div class="w-100 overflow-hidden headingimgmain mt-5">
+                <div class="headingimg">
+                    <div class="headingimgdiv">
+                        <div>
+                            <h1>
+                                Exquisite Taste<br />
+                                Refreshing Blends.
+                            </h1>
+
+                            <p>Polular flavored tea you must try.</p>
+                            <a href="">Discover More <i class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-     </section>
+    </section>
+
+    <!-- Find the right tea for you -->
+    <section class="w-100" style="
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(1, 42, 1, 0.411);
+      ">
+        <video autoplay muted loop playsinline class="bg-video" style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: -1;
+          transition: transform 0.3s ease;
+        ">
+            <source src="web/images/13158951_1920_1080_60fps.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="videocnt" style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+          text-align: center;
+        ">
+            <div class="">
+                <span>explore our guide</span>
+                <h1>
+                    Find the right tea
+                    <br/>
+                    for you
+                </h1>
+
+                <div class="herobtn">
+                    <a href="" class="btn btn-outline-success border-white text-white py-3 px-4">Learn More <i
+                            class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact form -->
+    <section class="contactfrm my-5">
+        <div class="d-flex align-items-center justify-content-center flex-column">
+            <div class="contactfrmheading text-center">
+                <h1>Leave Us a Message</h1>
+                <p>Fill all information details to consult with us to get sevices from us</p>
+            </div>
+            <form action="" class="frm">
+
+                <input type="text" placeholder="Name*">
+                <input type="tel" name="" id="" placeholder="Phone*">
+                <input type="email" name="" id="" placeholder="Email*">
+                <textarea name="" id="" placeholder="Enter your message..."></textarea>
+
+                <div class="herobtn">
+                    <a href="" class="btn btn-success border-white py-3 px-4">Send Your Message<i
+                            class="bi bi-chevron-right"></i></a>
+                </div>
+            </form>
+            <img src="web/images/testimonial.jpg" class="img1" alt="">
+            <img src="web/images/testimonial.jpg" class="img2 d-sm-block d-none" style="" alt="">
+        </div>
+    </section>
+
 
     <script src="web/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
