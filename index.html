@@ -1,201 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="web/css/style.css" />
-</head>
+  </head>
 
-<body class="roboto-font">
+  <body class="roboto-font">
     <!-- toppest navbar -->
     <section class="toppest">
-        <span>Guardians of Pure Taste</span>
+      <span>Guardians of Pure Taste</span>
     </section>
-    <header>
-        <nav class="d-flex align-items-center justify-content-between">
-            <div>
-                <img src="web/images/chaigpt-removebg-preview.png" width="100" alt="" />
-            </div>
-            <div class="d-flex align-items-center justify-content-between">
-                <ul class="mainlist d-none d-lg-flex align-items-center">
-                    <li><a href="">HOME</a></li>
-                    <li class="dropdwn"><a href="">SERVICES <i class="bi bi-chevron-right itsdrop"></i></a>
-                        <ul class="sublist">
-                            <li><a href="">Franchise</a></li>
-                            <li><a href="">RETAIL</a></li>
-                            <li><a href="">LUXE EXPERIENCES</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">OUR GALLERY</a></li>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">CONTACT US</a></li>
-                    <!-- make 404 page -->
-                </ul>
-                <i class="bi bi-list d-lg-none"></i>
-            </div>
-           
-        </nav>
+    <header
+      style="
+        background-image: linear-gradient(
+          to right,
+          rgb(3, 6, 15) 30%,
+          #090b159c,
+          #090b1561
+        );
+      "
+      class="py-1"
+    >
+      <nav class="d-flex align-items-center justify-content-between">
+        <div>
+          <img src="web/images/chaigpt.png" width="100" alt="" />
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <ul class="mainlist d-none d-lg-flex align-items-center">
+            <li><a href="">HOME</a></li>
+            <li class="dropdwn">
+              <a href=""
+                >SERVICES <i class="bi bi-chevron-right itsdrop"></i
+              ></a>
+              <ul class="sublist">
+                <li><a href="">Franchise</a></li>
+                <li><a href="">RETAIL</a></li>
+                <li><a href="">LUXE EXPERIENCES</a></li>
+              </ul>
+            </li>
+            <li><a href="">OUR GALLERY</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">CONTACT US</a></li>
+            <!-- make 404 page -->
+          </ul>
+          <i class="bi bi-list d-lg-none openmenu"></i>
+        </div>
+      </nav>
     </header>
+
+    <!-- menu -->
+     <div class="menu d-lg-none">
+        <i class="bi bi-x-lg closemenu "></i>
+        <div>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">FRANCHISE</a></li>
+                <li><a href="">RETAIL</a></li>
+                <li><a href="">LUXE EXPERIENCES</a></li>
+                <li><a href="">OUR GALLERY</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </div>
+     </div>
 
     <!-- hero section -->
     <section class="herosec">
-        <div>
-            <div class="herotext">
-                <span>ORGANIC GREEN TEA</span>
-                <h1>
-                    Start Your
-                    <br />
-                    Relaxing Life
-                    <br />
-                    Today
-                </h1>
-                <p>The wonderful taste of life.</p>
-                <div class="herobtn">
-                    <a href="" class="btn btn-success border-white py-3 px-4">Shop Our Teas <i
-                            class="bi bi-chevron-right"></i></a>
-                </div>
-            </div>
+      <div>
+        <div class="herotext" data-aos="fade-up"  data-aos-duration="3000">
+          <span>ORGANIC GREEN TEA</span>
+          <h1>
+            Start Your
+            <br />
+            Relaxing Life
+            <br />
+            Today
+          </h1>
+          <p>The wonderful taste of life.</p>
+          <div class="herobtn">
+            <a href="" class="btn btn-success border-white py-3 px-4"
+              >Shop Our Teas <i class="bi bi-chevron-right"></i
+            ></a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- about us -->
     <section class="aboutussec">
-        <div>
-            <span>ABOUT US</span>
-            <h1>
-                Welcome to Our
-                <br />
-                Tea Store
-            </h1>
-            <p>
-                We are a family run company founded on a passion for tea. Our Chairman
-                made a promise to never sell tea he wouldn’t drink at home. Learn how
-                we stay true to those values in everything we do.
-            </p>
-            <div class="herobtn">
-                <a href="" class="btn btn-outline-success border-white text-white py-3 px-4">Learn More <i
-                        class="bi bi-chevron-right"></i></a>
-            </div>
+      <div>
+        <span>ABOUT US</span>
+        <h1>
+          Welcome to Our
+          <br />
+          Tea Store
+        </h1>
+        <p>
+          We are a family run company founded on a passion for tea. Our Chairman
+          made a promise to never sell tea he wouldn’t drink at home. Learn how
+          we stay true to those values in everything we do.
+        </p>
+        <div class="herobtn">
+          <a
+            href=""
+            class="btn btn-outline-success border-white text-white py-3 px-4"
+            >Learn More <i class="bi bi-chevron-right"></i
+          ></a>
         </div>
+      </div>
     </section>
 
     <!-- Shop Our Teas -->
     <section class="shopouttras my-5">
-        <div class="container-fluid">
-            <div>
-                <h1>Shop Our Teas</h1>
-            </div>
-            <div class="soteascateg">
-                <ul class="d-flex flex-wrap gap-4 gap-sm-5 align-items-center justify-content-center">
-                    <li><a href="" class="btn btn-outline-success">Franchise</a></li>
-                    <li><a href="" class="btn btn-outline-success">Retail</a></li>
-                    <li><a href="" class="btn btn-outline-success">Luxe Experiences</a></li>
-                </ul>
-            </div>
-
-            <div class="row mt-5">
-                <div class="col-lg-5">
-                    <div class="cd">
-                        <div>
-                            <img src="web/images/products/product1newin.jpg" class="img-fluid imgattop" alt="" />
-                            <img src="web/images/products/product12newin.jpg" class="img-fluid imgatbottom" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div class="transformdivmain col-lg-7 pb-1 pb-sm-0 mt-lg-0 mt-3 d-flex align-items-end justify-content-center" style="overflow: hidden; position: relative;border: 1px solid lightgray;">
-                    <div class="">
-                        <div style="position: absolute; top: 0; background-color: #2e895e; color: #fff; padding: 0.75rem 1rem; border-radius: 0 0 10px 10px;">
-                            <h4>Franchise</h4>
-                        </div>
-                       <div class="transformdiv ">
-                    <div>
-                        <h1 class="text-start">Become a Franchise Partner</h1>
-                        <p class=" mb-3 fw-normal">Join us in spreading the love of authentic tea blends.</p>
-                    </div>
-
-                    <div class="">
-                        <h2 class="mb-3">How to Start</h2>
-                        <ol class="steps">
-                            <li>Fill out the franchise application form.</li>
-                            <li>Our team will review your application and connect with you.</li>
-                            <li>Finalize agreement and location setup.</li>
-                            <li>Training & launch support provided by our experts.</li>
-                        </ol>
-                        <div class="herobtn mt-3">
-                            <a href="" class="btn btn-success py-3 px-4">Contact Now <i class="bi bi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                     <div class="herobtn mt-3">
-                            <a href="" class="btn btn-success py-3 px-4 w-75">Learn More <i class="bi bi-chevron-right"></i></a>
-                        </div>
-</div>
-</div> 
-                </div>
-
-                <div class="whyus py-5">
-                    <h2 class="text-center mb-4">Why Partner With Us?</h2>
-                    <div class="row g-4 text-center why-us">
-                        <div class="col-md-4">
-                            <i class="bi bi-cup-hot-fill"></i>
-                            <h5 class="mt-2">Trusted Brand</h5>
-                            <p>Recognized for authentic flavors and premium quality teas.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="bi bi-people-fill"></i>
-                            <h5 class="mt-2">Strong Support</h5>
-                            <p>We provide complete training, marketing, and operational support.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="bi bi-graph-up-arrow"></i>
-                            <h5 class="mt-2">Profitable Business</h5>
-                            <p>High growth potential with low investment risks.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-
-            <div class="w-100 overflow-hidden headingimgmain mt-5">
-                <div class="headingimg">
-                    <div class="headingimgdiv">
-                        <div>
-                            <h1>
-                                Exquisite Taste<br />
-                                Refreshing Blends.
-                            </h1>
-
-                            <p>Polular flavored tea you must try.</p>
-                            <a href="">Discover More <i class="bi bi-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div>
+          <h1>Our Services</h1>
         </div>
+        <div class="soteascateg">
+          <ul
+            class="d-flex flex-wrap gap-4 gap-sm-5 align-items-center justify-content-center"
+          >
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="btn btn-outline-success service-btn"
+                data-target="Franchiseservice"
+                >Franchise</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="btn btn-outline-success service-btn"
+                data-target="Retailservice"
+                >Retail</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="btn btn-outline-success service-btn"
+                data-target="luxeexperience"
+                >Luxe Experiences</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="row mt-5 Franchiseservice service-div">
+          <div class="col-lg-5">
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/product1newin.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="transformdivmain col-lg-7 pb-1 pb-sm-0 mt-lg-0 mt-3 d-flex align-items-end justify-content-center"
+            style="
+              overflow: hidden;
+              position: relative;
+              border: 1px solid lightgray;
+            "
+          >
+            <div class="">
+              <div
+                style="
+                  position: absolute;
+                  top: 0;
+                  background-color: #2e895e;
+                  color: #fff;
+                  padding: 0.75rem 1rem;
+                  border-radius: 0 0 10px 10px;
+                "
+              >
+                <h4>Franchise</h4>
+              </div>
+              <div class="transformdiv">
+                <div>
+                  <h1 class="text-start">Become a Franchise Partner</h1>
+                  <p class="mb-3 fw-normal">
+                    Join us in spreading the love of authentic tea blends.
+                  </p>
+                </div>
+
+                <div class="">
+                  <h2 class="mb-3">How to Start</h2>
+                  <ol class="steps">
+                    <li>Fill out the franchise application form.</li>
+                    <li>
+                      Our team will review your application and connect with
+                      you.
+                    </li>
+                    <li>Finalize agreement and location setup.</li>
+                    <li>Training & launch support provided by our experts.</li>
+                  </ol>
+                  <div class="herobtn mt-3">
+                    <a href="" class="btn btn-success py-3 px-4"
+                      >Contact Now <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="herobtn mt-3">
+                  <a href="" class="btn btn-success py-3 px-4 w-75"
+                    >Learn More <i class="bi bi-chevron-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="whyus py-5">
+            <h2 class="text-center mb-4">Why Partner With Us?</h2>
+            <div class="row g-4 text-center why-us">
+              <div class="col-md-4">
+                <i class="bi bi-cup-hot-fill"></i>
+                <h5 class="mt-2">Trusted Brand</h5>
+                <p>
+                  Recognized for authentic flavors and premium quality teas.
+                </p>
+              </div>
+              <div class="col-md-4">
+                <i class="bi bi-people-fill"></i>
+                <h5 class="mt-2">Strong Support</h5>
+                <p>
+                  We provide complete training, marketing, and operational
+                  support.
+                </p>
+              </div>
+              <div class="col-md-4">
+                <i class="bi bi-graph-up-arrow"></i>
+                <h5 class="mt-2">Profitable Business</h5>
+                <p>High growth potential with low investment risks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 Retailservice service-div">
+          <div class="col-lg-5">
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/product1newin.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="transformdivmain col-lg-7 pb-1 pb-sm-0 mt-lg-0 mt-3 d-flex align-items-end justify-content-center"
+            style="
+              overflow: hidden;
+              position: relative;
+              border: 1px solid lightgray;
+            "
+          >
+            <div class="">
+              <div
+                style="
+                  position: absolute;
+                  top: 0;
+                  background-color: #2e895e;
+                  color: #fff;
+                  padding: 0.75rem 1rem;
+                  border-radius: 0 0 10px 10px;
+                "
+              >
+                <h4>Retail</h4>
+              </div>
+              <div class="transformdiv">
+                <div>
+                  <h1 class="text-start">Retail Products by Chaigpt</h1>
+                  <p class="mb-3 fw-normal">
+                    Authentic chai blends, packed for your home & café
+                  </p>
+                </div>
+
+                <div class="">
+                  <h2 class="mb-3">Must Try.</h2>
+                  <ol class="steps">
+                    <li>Choose our bestselling products.</li>
+                    <li>Try our new products.</li>
+                    <li>Also try our combo packages.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                  </ol>
+                  <div class="herobtn mt-3">
+                    <a href="" class="btn btn-success py-3 px-4"
+                      >Contact Now <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="herobtn mt-3">
+                  <a href="" class="btn btn-success py-3 px-4 w-75"
+                    >Learn More <i class="bi bi-chevron-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="whyus py-5 d-flex align-items-center justify-content-center flex-column"
+          >
+            <h2 class="text-center mb-4">Bring Chaigpt Home Today</h2>
+            <p>Order authentic chai blends directly from us</p>
+
+            <div class="herobtn mt-3">
+              <a href="" class="btn btn-success py-3 px-4"
+                >Contact Now <i class="bi bi-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 luxeexperience service-div">
+          <div class="col-lg-5">
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/product1newin.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="transformdivmain col-lg-7 pb-2 pb-sm-0 mt-lg-0 mt-3 d-flex align-items-end justify-content-center"
+            style="
+              overflow: hidden;
+              position: relative;
+              border: 1px solid lightgray;
+            "
+          >
+            <div class="">
+              <div
+                style="
+                  position: absolute;
+                  top: 0;
+                  background-color: #2e895e;
+                  color: #fff;
+                  padding: 0.75rem 1rem;
+                  border-radius: 0 0 10px 10px;
+                "
+              >
+                <h4>Luxe Experiences</h4>
+              </div>
+              <div class="transformdiv">
+                <div>
+                  <h1 class="text-start">The Chaigpt Luxe Experience</h1>
+                  <p class="mb-3 fw-normal">
+                    Indulge in the art of chai, crafted for sophistication
+                  </p>
+                </div>
+
+                <div class="">
+                  <h5>A Chai Journey Like No Other</h5>
+                  <p>
+                    Chaigpt Luxe Experience is more than just tea —
+                    <br />
+                    it’s about creating moments of elegance, serenity, and
+                    celebration.
+                    <br />
+                    From handcrafted blends to curated luxury tastings, we bring
+                    chai into a whole new light.
+                  </p>
+
+                  <h5>Indulge in the Luxe Experience</h5>
+                  <p>
+                    Book your private tasting or gift an exclusive blend today
+                  </p>
+                  <div class="herobtn mt-3">
+                    <a href="" class="btn btn-success py-3 px-4"
+                      >Contact Now <i class="bi bi-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="herobtn mt-3">
+                  <a href="" class="btn btn-success py-3 px-4 w-75"
+                    >Learn More <i class="bi bi-chevron-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="whyus py-5">
+            <h2 class="text-center mb-4">What We Offer?</h2>
+            <div class="row g-4 text-center why-us">
+              <div class="col-md-4">
+                <i class="bi bi-cup-hot-fill"></i>
+                <h5 class="mt-2">Exclusive Blends</h5>
+                <p>Rare chai varieties handpicked for the true connoisseur.</p>
+              </div>
+              <div class="col-md-4">
+                <i class="bi bi-people-fill"></i>
+                <h5 class="mt-2">Luxury Tastings</h5>
+                <p>
+                  Private sessions to savor premium chai with expert curation.
+                </p>
+              </div>
+              <div class="col-md-4">
+                <i class="bi bi-graph-up-arrow"></i>
+                <h5 class="mt-2">Premium Packaging</h5>
+                <p>
+                  Beautifully crafted packaging, perfect for gifting and special
+                  occasions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100 overflow-hidden headingimgmain mt-5">
+          <div class="headingimg">
+            <div class="headingimgdiv">
+              <div>
+                <h1>
+                  Exquisite Taste<br />
+                  Refreshing Blends.
+                </h1>
+
+                <p>Polular flavored tea you must try.</p>
+                <a href="">Discover More <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Find the right tea for you -->
-    <section class="w-100" style="
+    <section
+      class="w-100"
+      style="
         width: 100%;
         height: 80vh;
         position: relative;
         overflow: hidden;
         background-color: rgba(1, 42, 1, 0.411);
-      ">
-        <video autoplay muted loop playsinline class="bg-video" style="
+      "
+    >
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="bg-video"
+        style="
           position: absolute;
           top: 0;
           left: 0;
@@ -204,66 +498,373 @@
           object-fit: cover;
           z-index: -1;
           transition: transform 0.3s ease;
-        ">
-            <source src="web/images/13158951_1920_1080_60fps.mp4" type="video/mp4" />
-            Your browser does not support HTML5 video.
-        </video>
+        "
+      >
+        <source
+          src="web/images/13158951_1920_1080_60fps.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support HTML5 video.
+      </video>
 
-        <div class="videocnt" style="
+      <div
+        class="videocnt"
+        style="
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
           z-index: 1;
           text-align: center;
-        ">
-            <div class="">
-                <span>explore our guide</span>
-                <h1>
-                    Find the right tea
-                    <br/>
-                    for you
-                </h1>
+        "
+      >
+        <div class="">
+          <span>explore our guide</span>
+          <h1>
+            Find the right tea
+            <br />
+            for you
+          </h1>
 
-                <div class="herobtn">
-                    <a href="" class="btn btn-outline-success border-white text-white py-3 px-4">Learn More <i
-                            class="bi bi-chevron-right"></i></a>
-                </div>
-            </div>
+          <div class="herobtn">
+            <a
+              href=""
+              class="btn btn-outline-success border-white text-white py-3 px-4"
+              >Learn More <i class="bi bi-chevron-right"></i
+            ></a>
+          </div>
         </div>
+      </div>
     </section>
+
+    <!-- testimonial  -->
+  
+    <div class="bodytag py-5">
+      <swiper-container
+        class="mySwiper"
+        pagination="true"
+        pagination-clickable="true"
+        space-between="30"
+       
+        breakpoints='{
+   
+    "992": {
+      "slidesPerView": 2,
+      "spaceBetween": 30
+    },
+    "1200": {
+      "slidesPerView": 3,
+      "spaceBetween": 40
+    }
+  }'
+      >
+        <swiper-slide>
+          <div class="py-5 px-3 border">
+            <div class="d-flex stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="my-5">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam, delectus dolores nulla quos est maxime atque quas
+              adipisci reprehenderit iusto. Nulla, distinctio. Nihil quod vero,
+              magnam quam a quasi cupiditate!
+            </p>
+            <div class="d-flex">
+              <img src="web/images/avtar1.png" width="80" height="80" alt="" />
+              <div class="ms-4">
+                <h5>Saloni Bansal</h5>
+                <p>sep 2025</p>
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="py-5 px-3 border">
+              <div class="d-flex stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="my-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, delectus dolores nulla quos est maxime atque quas
+                adipisci reprehenderit iusto. Nulla, distinctio. Nihil quod
+                vero, magnam quam a quasi cupiditate!
+              </p>
+              <div class="d-flex">
+                <img
+                  src="web/images/avtar1.png"
+                  width="80"
+                  height="80"
+                  alt=""
+                />
+                <div class="ms-4">
+                  <h5>Saloni Bansal</h5>
+                  <p>sep 2025</p>
+                </div>
+              </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="py-5 px-3 border">
+              <div class="d-flex stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="my-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, delectus dolores nulla quos est maxime atque quas
+                adipisci reprehenderit iusto. Nulla, distinctio. Nihil quod
+                vero, magnam quam a quasi cupiditate!
+              </p>
+              <div class="d-flex">
+                <img
+                  src="web/images/avtar1.png"
+                  width="80"
+                  height="80"
+                  alt=""
+                />
+                <div class="ms-4">
+                  <h5>Saloni Bansal</h5>
+                  <p>sep 2025</p>
+                </div>
+              </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="py-5 px-3 border">
+              <div class="d-flex stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="my-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, delectus dolores nulla quos est maxime atque quas
+                adipisci reprehenderit iusto. Nulla, distinctio. Nihil quod
+                vero, magnam quam a quasi cupiditate!
+              </p>
+              <div class="d-flex">
+                <img
+                  src="web/images/avtar1.png"
+                  width="80"
+                  height="80"
+                  alt=""
+                />
+                <div class="ms-4">
+                  <h5>Saloni Bansal</h5>
+                  <p>sep 2025</p>
+                </div>
+              </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="py-5 px-3 border">
+              <div class="d-flex stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="my-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, delectus dolores nulla quos est maxime atque quas
+                adipisci reprehenderit iusto. Nulla, distinctio. Nihil quod
+                vero, magnam quam a quasi cupiditate!
+              </p>
+              <div class="d-flex">
+                <img
+                  src="web/images/avtar1.png"
+                  width="80"
+                  height="80"
+                  alt=""
+                />
+                <div class="ms-4">
+                  <h5>Saloni Bansal</h5>
+                  <p>sep 2025</p>
+                </div>
+              </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="py-5 px-3 border">
+              <div class="d-flex stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="my-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, delectus dolores nulla quos est maxime atque quas
+                adipisci reprehenderit iusto. Nulla, distinctio. Nihil quod
+                vero, magnam quam a quasi cupiditate!
+              </p>
+              <div class="d-flex">
+                <img
+                  src="web/images/avtar1.png"
+                  width="80"
+                  height="80"
+                  alt=""
+                />
+                <div class="ms-4">
+                  <h5>Saloni Bansal</h5>
+                  <p>sep 2025</p>
+                </div>
+              </div>
+            </div>
+        </swiper-slide>
+        
+      </swiper-container>
+    </div>
+    
 
     <!-- contact form -->
     <section class="contactfrm my-5">
-        <div class="d-flex align-items-center justify-content-center flex-column">
-            <div class="contactfrmheading text-center">
-                <h1>Leave Us a Message</h1>
-                <p>Fill all information details to consult with us to get sevices from us</p>
-            </div>
-            <form action="" class="frm">
-
-                <input type="text" placeholder="Name*">
-                <input type="tel" name="" id="" placeholder="Phone*">
-                <input type="email" name="" id="" placeholder="Email*">
-                <textarea name="" id="" placeholder="Enter your message..."></textarea>
-
-                <div class="herobtn">
-                    <a href="" class="btn btn-success border-white py-3 px-4">Send Your Message<i
-                            class="bi bi-chevron-right"></i></a>
-                </div>
-            </form>
-            <img src="web/images/testimonial.jpg" class="img1" alt="">
-            <img src="web/images/testimonial.jpg" class="img2 d-sm-block d-none" style="" alt="">
+      <div class="d-flex align-items-center justify-content-center flex-column">
+        <div class="contactfrmheading text-center">
+          <h1>Leave Us a Message</h1>
+          <p>
+            Fill all information details to consult with us to get sevices from
+            us
+          </p>
         </div>
+        <form action="" class="frm">
+          <input type="text" placeholder="Name*" />
+          <input type="tel" name="" id="" placeholder="Phone*" />
+          <input type="email" name="" id="" placeholder="Email*" />
+          <textarea
+            name=""
+            id=""
+            placeholder="Enter your message..."
+          ></textarea>
+
+          <div class="herobtn">
+            <a href="" class="btn btn-success border-white py-3 px-4"
+              >Send Your Message<i class="bi bi-chevron-right"></i
+            ></a>
+          </div>
+        </form>
+        <img src="web/images/testimonial.jpg" class="img1" alt="" />
+        <img
+          src="web/images/testimonial.jpg"
+          class="img2 d-sm-block d-none"
+          style=""
+          alt=""
+        />
+      </div>
     </section>
 
-
+    <!-- footer -->
+    <footer class="">
+      <div class="container-fluid">
+        <div class="row py-5">
+          <div class="col-xl-3 mb-xl-0 mb-5">
+            <div class="text-xl-start text-center">
+              <img src="web/images/chaigpt.png" width="100" alt="" />
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4 mb-md-0 mb-5">
+            <div>
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Our Gallery</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4 mb-md-0 mb-5">
+            <div>
+              <h4>Our Services</h4>
+              <ul>
+                <li><a href="">Franchise</a></li>
+                <li><a href="">Retail</a></li>
+                <li><a href="">Luxe Experiences</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4">
+            <div>
+              <h4>Get In Touch</h4>
+              <ul>
+                <li>
+                  <a href=""
+                    ><i class="bi bi-geo-alt"></i> &nbsp;2972 Westheimer Rd.
+                    Santa Ana, Illinois 85486</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="bi bi-envelope"></i> &nbsp;support@example.com</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="bi bi-telephone"></i> &nbsp;+91 9879876543</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="socialmedia">
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-whatsapp"></i></a>
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="cpy mt-5 py-3 px-1">
+        <a href=""
+          >Copyright © 2025 ChaiGPT. All rights reserved. Design by
+          Tssg-Tech.</a
+        >
+      </div>
+    </footer>
     <script src="web/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</body>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+    <script>
+      let buttons = document.querySelectorAll(".service-btn");
+      let servicediv = document.querySelectorAll(".service-div");
+      buttons.forEach((button) => {
+        servicediv[1].style.display = "none";
+        servicediv[2].style.display = "none";
+        button.addEventListener("click", () => {
+          servicediv.forEach((div) => {
+            div.style.display = "none";
+          });
+          let target = button.getAttribute("data-target");
+          document.querySelector("." + target).style.display = "flex";
+        });
+      });
+      
+    </script>
+  </body>
 </html>
