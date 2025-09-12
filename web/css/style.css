@@ -134,7 +134,11 @@ header {
   height: 100vh;
   top: 0;
 }
-
+@supports (-webkit-touch-callout: none) {
+  .herosec {
+    background-attachment: scroll;
+  }
+}
 .herosec > div {
   height: 100%;
   width: 100%;
