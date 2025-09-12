@@ -148,8 +148,8 @@ header {
 
 .herotext {
   position: absolute;
-  top: 50%;
-  transform: translateY(-25%);
+  top: 40%;
+  /* transform: translateY(-30%); */
 }
 .herotext span {
   color: #3db77e;
