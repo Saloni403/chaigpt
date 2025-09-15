@@ -34,14 +34,12 @@
       <span>Guardians of Pure Taste</span>
     </section>
     <header
-      style="
-        background-image: linear-gradient(
+    style="position: absolute; background: linear-gradient(
           to right,
           rgb(3, 6, 15) 30%,
           #090b159c,
           #090b1561
-        );
-      "
+        );"
       class="py-1"
     >
       <nav class="d-flex align-items-center justify-content-between">
@@ -62,7 +60,7 @@
               </ul>
             </li>
             <li><a href="">OUR GALLERY</a></li>
-            <li><a href="">ABOUT US</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
             <li><a href="">CONTACT US</a></li>
             <!-- make 404 page -->
           </ul>
@@ -81,7 +79,7 @@
           <li><a href="">RETAIL</a></li>
           <li><a href="">LUXE EXPERIENCES</a></li>
           <li><a href="">OUR GALLERY</a></li>
-          <li><a href="">ABOUT US</a></li>
+          <li><a href="aboutus.html">ABOUT US</a></li>
           <li><a href="">CONTACT US</a></li>
         </ul>
       </div>
@@ -142,12 +140,73 @@
     </section>
 
     <!-- Shop Our Teas -->
+    
+     <!-- 4:5 -->
     <section class="shopouttras my-5">
       <div class="container-fluid">
-        <div>
+        <div class="mb-5">
           <h1>Our Services</h1>
         </div>
-        <div class="soteascateg">
+
+        <div class="row gy-5">
+          <div class="col-xl-4 col-md-6 ">
+            <div>
+               <h4>FRENCHISE</h4>
+            <div class="frediv servdiv">
+              <img src="web/images/services/frenchiseserviceimg.jpg" class="img-fluid" alt="">
+              <div class="subservices infoform" >
+                <div onclick="location.href='form.html'">
+                  <img src="web/images/services/fs1.jpg" alt="">
+                  <p>CART</p>
+                </div>
+                 <div onclick="location.href='form.html'">
+                  <img src="web/images/services/fs2.jpg" alt="">
+                  <p>CAFE</p>
+                </div>
+              </div>
+            </div>
+           
+            </div>
+          </div>
+            <div class="col-xl-4 col-md-6 ">
+           <div>
+             <h4>RETAIL</h4>
+            <div class="frediv servdiv">
+              <img src="web/images/services/retailserviceimg.jpg" class="img-fluid" alt="">
+              <div class="subservices">
+                    <h2>View Our Products</h2>                
+              </div>
+            </div>
+           
+            </div>
+          </div>
+            <div class="col-xl-4 col-md-6 ">
+            <div>
+               <h4>LUXE EXPERIENCES</h4>
+            <div class="frediv servdiv">
+              <img src="web/images/services/luxeserviceimg.jpg" class="img-fluid" alt="">
+              <div class="subservices infoform">
+                <div onclick="location.href='form.html'">
+                  <img src="web/images/services/fs1.jpg" alt="">
+                  <p>EVENT 1</p>
+                </div>
+                 <div onclick="location.href='form.html'">
+                  <img src="web/images/services/fs2.jpg" alt="">
+                  <p>EVENT 2</p>
+                </div>
+                 <div onclick="location.href='form.html'">
+                  <img src="web/images/services/fs2.jpg" alt="">
+                  <p>EVENT 3</p>
+                </div>
+              </div>
+            </div>
+           
+            </div>
+          </div>
+        </div>
+
+      
+        <!-- <div class="soteascateg">
           <ul
             class="d-flex flex-wrap gap-4 gap-sm-5 align-items-center justify-content-center"
           >
@@ -460,7 +519,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="w-100 overflow-hidden headingimgmain mt-5">
           <div class="headingimg">
@@ -529,8 +588,9 @@
         <div class="">
           <span>explore our guide</span>
           <h1>
-            Find the right tea
-            <br />
+            Find the right
+             <br/>
+             tea
             for you
           </h1>
 
@@ -742,8 +802,7 @@
         <img
           src="web/images/testimonial.jpg"
           class="img2 d-sm-block d-none"
-          style=""
-          alt=""
+         
         />
       </div>
     </section>
@@ -763,7 +822,7 @@
               <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Our Gallery</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="">Contact Us</a></li>
               </ul>
             </div>
@@ -819,6 +878,7 @@
       </div>
     </footer>
     <script src="web/js/script.js"></script>
+    <script src="web/js/indexservices.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -829,21 +889,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
-    <script>
-      let buttons = document.querySelectorAll(".service-btn");
-      let servicediv = document.querySelectorAll(".service-div");
-      buttons.forEach((button) => {
-        servicediv[1].style.display = "none";
-        servicediv[2].style.display = "none";
-        button.addEventListener("click", () => {
-          servicediv.forEach((div) => {
-            div.style.display = "none";
-          });
-          let target = button.getAttribute("data-target");
-          document.querySelector("." + target).style.display = "flex";
-        });
-      });
     </script>
   </body>
 </html>

@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #fff !important;
+}
 a {
   text-decoration: none;
 }
@@ -47,8 +50,15 @@ ul li {
 /* toppest nav */
 header {
   padding: 0 3rem;
-  /* background-color: #03050e; */
-  position: absolute;
+  background: #03050e;
+  /* position: absolute; */
+   /* background-image: linear-gradient(
+          to right,
+          rgb(3, 6, 15) 30%,
+          #090b159c,
+          #090b1561
+        ); */
+       
   width: 100%;
   z-index: 99;
 }
@@ -139,6 +149,7 @@ header {
     background-attachment: scroll;
   }
 }
+
 .herosec > div {
   height: 100%;
   width: 100%;
@@ -242,8 +253,110 @@ height: auto;
 .aboutussec p {
   color: #fff;
 }
+/* shop our teas new */
+      .shopouttras h4{
+        color: #090b159c;
+      }
+      .servdiv {
+position: relative;
+      }
+.servdiv::after{
+  content: "";
+  background-color:rgba(0, 0, 0, 0.127);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.subservices{
+  position: absolute;
+    background-color: rgba(0, 0, 0, 0.819);
+    color: #fff ;
+    height: 100%;
+    width: 100%;
+   text-align: center;
+  top: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+z-index: 2;
+column-gap: 2rem;
+  left: 0;
+ opacity: 0;
+ transition: 0.5s;
+ visibility: hidden;
+}
+@media (max-width:1200px) {
+ 
+}
+.servdiv:hover .subservices{
+  opacity: 1;
+visibility: visible;
+}
+.subservices p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.subservices > div{
+  height: fit-content;
+}
+.subservices img{
+  border: 1px solid white;
+  width: 150px;
+}
+@media (max-width:375px) {
+  .subservices{
+column-gap: 1rem;
+  }
+  .subservices img{
+  width: 120px;
+}
+}
+.shopouttrasform{
+ position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  background-color: #fff;
+  z-index: -2;
+}
+
+.divvv{
+  height: 100vh;
+  z-index: -5;
+  overflow: hidden;
+   position: relative;
+  
+}
+.shopouttrasform .imgleft{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.shopouttrasform .imgmove{
+position: absolute;
+/* top: 0; */
+right:0;
+transition: 0.5s;
+ z-index: -1;
+animation: trans 1s ease-in-out;
+}
+@keyframes trans {
+  0%{
+   transform: translateX(200px);
+  }
+  100%{
+ transform: translateX(0);
+  }
+}
+/* shop our teas new */
 
 /* shop our teas */
+/*
 .shopouttras .container-fluid {
   display: flex;
   align-items: center;
@@ -301,9 +414,9 @@ height: auto;
   .headingimgmain {
     padding: 0;
   }
-}
+}*/
 .headingimgdiv {
-  /* background-color: rgba(0, 0, 0, 0.023); */
+  background-color: rgba(0, 0, 0, 0.023);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -544,4 +657,81 @@ footer ul li a {
 }
 .socialmedia a:nth-child(4) i {
   background: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about us page */
+.aboutushero{
+  width: 60%;
+}
+.aboutushero span {
+  color: #3db77e;
+  font-size: 14px;
+  font-weight: 500;
+}
+.aboutushero h1 {
+  font-size: 3.25rem;
+  color: #194a33;
+  letter-spacing: -1;
+  font-weight: 700;
+}
+@media (max-width: 576px) {
+  .aboutussec h1 {
+    font-size: 2rem;
+  }
+}
+.aboutushero p{
+font-weight: 500;
+font-size: 14px;
+}
+.aboutusherodiv{
+  position: relative;
+  overflow: hidden;
+}
+.aboutusherodiv .abouthdi{
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  transform:translateX(30%) translateY(-50%) rotate(0);
+  animation: rotate 2s ease;
+  z-index: -1;
+}
+@keyframes rotate {
+  0%{
+     transform:translateX(100%) translateY(-50%) rotate(90deg);
+  }
+  100%{
+     transform:translateX(30%) translateY(-50%) rotate(0);
+  }
+}
+
+
+/* fourimges */
+.fourimges{
+  text-align: center;
+}
+
+.fourimges p{
+  /* font-size: 14px; */
+  color: grey;
+  font-weight: 500;
+}
+.fourimges svg{
+  transition: 0.3s;
+}
+.fourimges svg:hover{
+  transform: scale(0.9);
 }
