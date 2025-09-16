@@ -254,6 +254,9 @@ height: auto;
   color: #fff;
 }
 /* shop our teas new */
+.shopouttras h1{
+        color: #194a33;
+      }
       .shopouttras h4{
         color: #090b159c;
       }
@@ -516,7 +519,10 @@ animation: trans 1s ease-in-out;
 
 
 /* testimonial */
- 
+.bodytag h1{
+  color: #194a33;
+} 
+
       .bodytag {
        background-image: url(../images/testimonialmainimg.jpg);
         position: relative;
@@ -673,8 +679,48 @@ footer ul li a {
 
 
 /* about us page */
-.aboutushero{
-  width: 60%;
+
+      .aboutusheroimg {
+  width: 50vw;
+  height: 100vh;   /* or any height you want */
+  overflow: hidden; /* crops if image is bigger */
+}
+
+.aboutusheroimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps proportions, fills box */
+}
+
+  .aboutushero{
+        width: 50vw;
+      }
+       .aboutushero > div{
+        width: 95%;
+      }
+      @media (min-width:1200px) {
+         .aboutushero{
+        width: 40vw;
+      }
+       .aboutushero > div{
+        width: 80%;
+      }
+      }
+@media (max-width:768px) {
+  .aboutusherodiv{
+  display: block !important;
+
+}
+.aboutusheroimg {
+  width: 100vw;
+  height: 60vh;
+}
+ .aboutushero{
+        width: 100vw;
+      }
+    .aboutushero > div{
+        width: 100%;
+      }   
 }
 .aboutushero span {
   color: #3db77e;
@@ -688,7 +734,7 @@ footer ul li a {
   font-weight: 700;
 }
 @media (max-width: 576px) {
-  .aboutussec h1 {
+  .aboutushero h1 {
     font-size: 2rem;
   }
 }
@@ -699,22 +745,25 @@ font-size: 14px;
 .aboutusherodiv{
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 .aboutusherodiv .abouthdi{
   position: absolute;
-  top: 50%;
+  top: 50px;
+
   right: 0;
 
-  transform:translateX(30%) translateY(-50%) rotate(0);
+  transform:translateX(30%) rotate(0);
   animation: rotate 2s ease;
   z-index: -1;
 }
 @keyframes rotate {
   0%{
-     transform:translateX(100%) translateY(-50%) rotate(90deg);
+     transform:translateX(100%) rotate(90deg);
   }
   100%{
-     transform:translateX(30%) translateY(-50%) rotate(0);
+     transform:translateX(30%) rotate(0);
   }
 }
 
@@ -734,4 +783,131 @@ font-size: 14px;
 }
 .fourimges svg:hover{
   transform: scale(0.9);
+}
+
+
+/* our story */
+.ourstory{
+  height: 70vh; display: flex; align-items: end; border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.im1{
+   background-image: url(../images/ourstory1.jpg);
+}
+.im2{
+   background-image: url(../images/ourstory2.jpg);
+}
+.ourstorydiv{
+  width: 100%; background-color: white; padding: 1rem; margin: 2rem; border-radius: 10px;
+}
+.ourstorydiv span{
+  font-size: 14px;
+  color: #3db77e;
+font-weight: normal;
+}
+.ourstorydiv h2{
+  color: #194a33;
+}
+
+.ourstorydiv p{
+  color: #194a33;
+font-weight: normal;
+}
+.ourstorydiv a{
+  color: #194a33;
+  transition: 0.3s;
+}
+.ourstorydiv a:hover{
+  color: #3db77e;
+}
+@media (min-width:1200px) {
+  .ourstory{
+     height: 100vh;
+  }
+  .ourstorydiv{
+    padding: 4rem;
+     width: 60%;
+  }
+}
+  .ourach span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #3db77e;
+  }
+  .ourach h1{
+    color: #194a33;
+  }
+.addiv{
+  position: relative;
+}
+.ad2{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 12%);
+
+}
+.adrow{
+display: flex;
+align-items: center;
+justify-content: center;
+/* flex-direction: column; */
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact page */
+.contactheroimg{
+ color: #fff;
+  background-image: url(../images/contactheroimg.jpg);
+  background-position: center;
+   background-size: cover; 
+  background-repeat: no-repeat;
+  height:45vh;
+}
+.contactheroimg > div{
+  background-color: #03050e65;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+.contactheroimg h1{
+  font-size: 4rem;
+}
+
+.getin h1{
+ 
+  text-align: center;
+  color: #194a33;
+}
+.getin p{
+font-size: 14px;
+font-weight: 500;
+color: #194a33;
+}
+.tra{
+  transform: translateX(30%);
 }
