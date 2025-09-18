@@ -32,13 +32,18 @@ ul li {
     height: 100vh;
     right: -350px;
     top: 0;
-    background-color: #fff;
+    background-color: #ffffffc7;
+    backdrop-filter: blur(10px);
     z-index: 99;
     padding: 2rem 1rem;
     transition: 0.3s;
 }
 .menu li, .bi-x-lg::before{
     padding: 0.5rem 0;
+}
+.menu li{
+  border-bottom: 1px solid grey;
+  line-height: 3;
 }
 .menu li a{
     color: #000;
