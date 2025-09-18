@@ -29,6 +29,7 @@ document.querySelector(".soteascateg ul").classList.toggle("mystyle")
         });
       });
       ourproducts.forEach((prod)=>{
+        prod.style.cursor="pointer"
 prod.addEventListener("click",()=>{
   document.querySelector(".proddesc").style.display="flex"
 })

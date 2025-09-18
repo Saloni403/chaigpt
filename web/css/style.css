@@ -85,9 +85,11 @@ header {
   padding: 0 2rem;
   border-radius: 10px;
   transition: 0.3s;
+  z-index: 99;
 }
 .sublist li {
   margin-left: 0 !important;
+  color: #194A33;
   border-bottom: 2px solid lightgray;
   border-radius: 0 !important;
   padding: 1rem 0 !important;
@@ -188,7 +190,13 @@ header {
 .herobtn a i::before {
   font-size: 14px !important;
   font-weight: 600 !important;
+ 
 }
+.active:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 @media (max-width: 768px) {
   .herosec > div {
     padding-left: 1rem;
@@ -517,7 +525,48 @@ animation: trans 1s ease-in-out;
 }
 
 
+/* our team on home */
+.otonhome h1{
+  color: #194A33;
+}
+.otonhome h4{
+  color: #194A33;
+}
+.otonhomemain{
+position: relative; width: fit-content; overflow: hidden;
+border-radius: 10px;
+}
+.otonhomediv1{
+  position: absolute; top: -100%; left: 0; height: 100%; width: 100%;  display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          transition: 0.5s;
+}
+.otonhomediv2{
+  background-color: #0000006d; position: absolute; bottom: -100%; left: 0; height: 100%; width: 100%;
+   transition: 0.5s;
+   backdrop-filter: blur(10px);
+}
+.otonhome .container-fluid > div{
+  width: fit-content;
+}
+.otonhome .container-fluid > div:hover .otonhomediv1 {
+top: 0;
+}
+.otonhome .container-fluid > div:hover .otonhomediv2 {
+bottom:0;
+}
+.otonhomediv1 a{
+  color: #fff;
+   padding: 0.75rem 0.95rem;
+    transition: 0.3s;
+     border-radius: 50%;
+}
+.otonhomediv1 a:hover{
 
+  background-color: #000;
+}
 /* testimonial */
 .bodytag h1{
   color: #194a33;
@@ -656,7 +705,7 @@ footer ul li a {
   );
 }
 .socialmedia a:nth-child(2) i {
-  background: blue;
+  background: rgb(0,119,181);
 }
 .socialmedia a:nth-child(3) i {
   background: green;
@@ -915,7 +964,7 @@ font-weight: 500;
 color: #194a33;
 }
 .tra{
-  transform: translateX(30%);
+  /* transform: translateX(30%); */
 }
 
 
@@ -948,11 +997,15 @@ color: #194a33;
       }
       .diiiv{
         border-radius: 8px;
+        overflow: hidden;
       }
       .diiiv img{
         border-radius: 8px;
+       transition: 0.5s;
       }
-
+      .diiiv:hover img{
+transform: scale(1.1);
+      }
 
 
 /* products */
@@ -1198,8 +1251,29 @@ margin-top: 0.5rem;
   font-size: 1.5rem;
 }
 
+/* our blogs */
+.ourblogs h4{
+  color: #194a33;
+}
+.ourblogs p{
+  font-size: 1.1rem;
+  color: gray;
+}
+.ourblogs p b{
+  
+  color:#3db77e
+}
+.date{
+  position: absolute; top: 0; left: 1rem; background-color: #31ba7a; color: #fff; padding:0 1rem ; border-radius: 0 0 10px 10px;
+}
+.ourblogs img{
+  transition: 0.5s;
+}
+.ourblogs img:hover{
+  scale: 1.05;
+}
 /* our team */
-.ourteamm h1{
+/* .ourteamm h1{
   color: #194A33;
 }
 .ourteamm .mm{
@@ -1233,4 +1307,4 @@ overflow: hidden;
 }
 .ourteamm .row > div img:hover {
 transform: scale(1.2);
-}
+} */
