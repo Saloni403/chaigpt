@@ -39,3 +39,24 @@ document.querySelector(".backk").addEventListener("click",()=>{
       })
 
       
+
+
+
+
+
+let addtocart = document.querySelectorAll(".cartpopup")
+addtocart.forEach((cartpopup)=>{
+cartpopup.addEventListener("click",(event)=>{
+event.stopPropagation();
+alert("item is added to cart")
+})
+})
+
+
+
+
+
+
+
+
+
