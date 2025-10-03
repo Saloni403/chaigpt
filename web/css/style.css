@@ -1518,10 +1518,6 @@ color: #fff;
 
      /* dashboard */
 
-     .couponsimg{
-      
-     }
-
       .sidebar{
         min-width: 240px;
         height: 100vh;
@@ -1779,3 +1775,88 @@ transform:translateX(-50%)
 
 /* dashboard blur effect on coupons */
  
+    .track{
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+   .track h1{
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .trackerparent {
+      height: 20px;
+      width: 100%;
+      border-radius: 30px;
+      margin: 0;
+      padding: 0;
+      background-color: #e6e6e6;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      --progress: 0%;
+      /* overflow: hidden; */
+    }
+
+    /* progress fill */
+    .trackerparent::after {
+      content: "";
+      width: var(--progress);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(90deg, #ff5f6d, #ffc371);
+      border-radius: 30px;
+      transition: width 0.5s ease;
+    }
+
+    /* points (milestones) */
+    .trackerparent .points {
+      height: 14px;
+      width: 14px;
+      background-color: #333;
+      border-radius: 50%;
+      z-index: 2;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .trackerparent .points span {
+      position: absolute;
+      top: 25px;
+      /* transform: translateY(50%); */
+      z-index: 999;
+      font-size: 12px;
+      color: #333;
+      white-space: nowrap;
+    }
+
+    /* highlight filled points */
+    .trackerparent .points.filled {
+      background-color: #ff5f6d;
+    }
+
+    /* coupons */
+    .couponcard{
+      position: relative;
+    }
+    .couponcard::after{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+object-fit: cover;
+width: 100%;
+/* background-color: rgba(255, 255, 255, 0); */
+backdrop-filter: blur(5px);
+    }
+    
+    .couponcard.no-after::after {
+  content: none; 
+}

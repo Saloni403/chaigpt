@@ -49,39 +49,53 @@
       </div>
 
       <div class="text-center pt-5 section activediv" id="Dashboard">
-        <div class="mx-3">
-        <h2 class="mb-5 text-success">Your Presence Honors Us Mr./Mrs. Bansal ✨</h2>
-        <div class="progress-bar">
-          <div class="progress red">2.5k</div>
-          <div class="progress ">7.5k</div>
-          <div class="progress ">15k</div>
-          <div class="progress ">30k</div>
-          <div class="progress ">60k</div>
-          <div class="progress ">100k</div>
-        </div>
-        <p>You've savored the first pour <i class="bi bi-currency-rupee"></i>2,500 in indulgence. With just
+      <div class="track">
+  <h1 class="mb-5 text-success">Your Presence Honors Us Mr./Mrs. Bansal ✨</h1>
+
+  <div class="trackerparent">
+    <div class="points"><span>0</span></div>
+    <div class="points"><span>2.5k</span></div>
+    <div class="points"><span>7.5k</span></div>
+    <div class="points"><span>15k</span></div>
+    <div class="points"><span>30k</span></div>
+    <div class="points"><span>60k</span></div>
+    <div class="points"><span>100k</span></div>
+  </div>
+  <p class="mt-5">You've savored the first pour <i class="bi bi-currency-rupee"></i>2,500 in indulgence. With just
            <i class="bi bi-currency-rupee"></i>5,000 more, the gates of tier 2 opens, revealing a realm of rare rewards steeped in elegance.</p>
-      </div>
+</div>
 
       <div class="container">
-        <div class="row g-3 my-5 coupons">
-          <div class="col-lg-4 col-sm-6">
+        <div class="row g-3 mb-5 coupons">
+          <div class="col-lg-4 col-sm-6 ">
+            <div class="couponcard">
 <img src="web/images/coupon1.jpg" class="img-fluid" alt="">
+</div>
           </div>
           <div class="col-lg-4 col-sm-6">
+             <div class="couponcard">
 <img src="web/images/2.jpg" class="img-fluid" alt="">
           </div>
+          </div>
           <div class="col-lg-4 col-sm-6">
+             <div class="couponcard">
 <img src="web/images/3.jpg" class="img-fluid" alt="">
           </div>
+          </div>
            <div class="col-lg-4 col-sm-6">
+             <div class="couponcard">
 <img src="web/images/4.jpg" class="img-fluid" alt="">
           </div>
-          <div class="col-lg-4 col-sm-6">
-<img src="web/images/5.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-4 col-sm-6">
+             <div class="couponcard">
+<img src="web/images/5.jpg" class="img-fluid" alt="">
+          </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+             <div class="couponcard">
 <img src="web/images/6.jpg" class="img-fluid" alt="">
+          </div>
           </div>
          
         </div>
@@ -159,34 +173,13 @@
      
     </section>
 
-   
+   <script src="web/js/dashboard.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
    
-    <script>
-
-      function showContainer(id){
- document.querySelectorAll(".section").forEach(element => {
-        element.classList.remove("activediv")
-        document.getElementById(id).classList.add("activediv")
-       
-      })
-
-      document.querySelectorAll(".sidebarmenu li").forEach((list)=>{
-list.classList.remove("activee")
-event.target.classList.add("activee");
-      })
-      }
-     
-      let slidemenubtn= document.querySelector(".bi-arrow-right-circle")
-      slidemenubtn.addEventListener("click",()=>{
-        document.querySelector(".sidebar").classList.toggle("showing")
-        slidemenubtn.classList.toggle("activeicon")
-       })
-      
-    </script>
+ 
   </body>
 </html>
