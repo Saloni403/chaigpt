@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>ChaiGPT - Collection</title>
+    <link rel="Icon" type="Image/JPG" href="web/images/IMG_1581.JPG">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="web/css/style.css" />
+  </head>
+  <body class="roboto-font">
+    <!-- add to cart  -->
+    <section class="iconatbtm">
+      <div
+        class="d-flex gap-sm-3 gap-2 align-items-center justify-content-between"
+      >
+        <i class="bi bi-bag iconbag"></i>
+        <div class="">
+          <h6 class="mb-0">View Cart</h6>
+          <small>3 items</small>
+        </div>
+        <i class="bi bi-chevron-right"></i>
+      </div>
+    </section>
+
+    <!-- toppest navbar -->
+    <section class="toppest">
+      <span>Guardians of Pure Taste</span>
+    </section>
+    <header
+      class="py-1"
+    >
+      <nav class="d-flex align-items-center justify-content-between">
+        <div>
+          <img
+            src="web/images/IMG_1581.JPG"
+            class="clickable"
+            width="100"
+            onclick="location.href='index.html'"
+            alt=""
+          />
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <ul class="mainlist d-none d-lg-flex align-items-center">
+            <li><a href="index.html">HOME</a></li>
+            <li class="dropdwn">
+              <a href="#"
+                >SERVICES <i class="bi bi-chevron-right itsdrop"></i
+              ></a>
+              <ul class="sublist">
+                <li><a href="products.html">RETAIL</a></li>
+                <li><a href="index.html#ContactFormOnIndex">LUXE EXPERIENCES</a></li>
+                 <li><a href="404.html">FRANCHISE</a></li>
+              </ul>
+            </li>
+            <li><a href="ourteam.html">BLOGS</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+            <li>
+              <a href="cart.html"><i class="bi bi-bag"></i></a>
+            </li>
+            <li>
+              <a href="wishlist.html"><i class="bi bi-heart"></i></a>
+            </li>
+             <li>
+              <a href="loginprofile.html"><i class="bi bi-person-circle"></i></a>
+            </li>
+          </ul>
+          <div class="d-lg-none mobileview">
+            <i class="bi bi-list openmenu"></i>
+            <i class="bi bi-bag ms-3 clickable" onclick="location.href='cart.html'"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- menu -->
+    <div class="menu d-lg-none">
+      <i class="bi bi-x-lg closemenu"></i>
+      <div>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="404.html">FRANCHISE</a></li>
+          <li><a href="products.html">RETAIL</a></li>
+          <li><a href="index.html#ContactFormOnIndex">LUXE EXPERIENCES</a></li>
+          <li><a href="ourteam.html">BLOGS</a></li>
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li><a href="contactus.html">CONTACT US</a></li>
+          <li>
+            <a href="cart.html"><i class="bi bi-bag"></i> Cart</a>
+          </li>
+          <li>
+            <a href="wishlist.html"><i class="bi bi-heart"></i> Wishlist</a>
+          </li>
+          <li>
+            <a href="loginprofile.html"><i class="bi bi-person-circle"></i> My Profile</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- product hero img -->
+    <section>
+      <div class="contactheroimg">
+        <div>
+          <p>Home / Services / Retail</p>
+          <h1 class="mt-5">Our Collection</h1>
+          <h2>Welcome Mr/Mrs. Bansal</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- comboes -->
+
+    <!-- <section class="combosec my-5">
+      <div class="container-fluid">
+        <div class="row gy-4 d-flex align-items-center justify-content-center">
+          <div class="col-lg-4 col-sm-6">
+            <div class="diiiv position-relative">
+              <img src="web/images/pimg1.jpg" class="img-fluid" alt="" />
+              <div class="combotext">
+                <span>MUGS AND SAMPLES</span>
+                <h1 class="mt-2">
+                  2 for only <i class="bi bi-currency-rupee"></i>2500
+                </h1>
+                <div class="herobtn mt-md-5 mt-3">
+                  <a href="" class="active">SHOP NOW <i class="bi bi-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="diiiv position-relative">
+              <img src="web/images//pimg2.jpg" class="img-fluid" alt="" />
+              <div class="combotext">
+                <span>100 gms Boxes</span>
+                <h1 class="mt-2">
+                  3 for only <i class="bi bi-currency-rupee"></i>1500
+                </h1>
+                <div class="herobtn mt-md-5 mt-3">
+                  <a href="" class="active">SHOP NOW <i class="bi bi-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="diiiv position-relative">
+              <img src="web/images/pimg3.jpg" class="img-fluid" alt="" />
+              <div class="combotext">
+                <span>MUGS AND SAMPLES</span>
+                <h1 class="mt-2">Get 30% off</h1>
+                <div class="herobtn mt-md-5 mt-3">
+                  <a href="" class="active">SHOP NOW <i class="bi bi-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Products list -->
+
+    <section class="shopouttras my-5">
+      <div class="container-fluid">
+        <div>
+          <h1>The Reserve Collection</h1>
+        </div>
+        <div class="soteascateg">
+          <ul class="">
+            <li data-category="All" class="active">All</li>
+            <li data-category="green-tea" class="active">Green Tea</li>
+            <li data-category="herbal-tea" class="active">Herbal & Wellness</li>
+            <li data-category="black-tea" class="active">Black Tea</li>
+          </ul>
+          <i
+            class="bi bi-card-list d-sm-none"
+            onclick="showcatlist()"
+            style="font-size: 2rem"
+          ></i>
+        </div>
+
+        <div class="row g-3 px-sm-3 mt-sm-5 mt-0">
+          <div
+            class="col-xl-3 col-md-4 col-sm-6 ourproducts"
+            data-category="green-tea"
+          >
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/Ayurvedic Detox Green Tea.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+                <div class="ddiv">
+                  <span>30% off</span>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="p-3 d-flex align-items-end justify-content-between">
+                <div>
+                  <div class="d-flex stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div>
+                    <p>Ayurvedic Detox Green Tea</p>
+                    <span><i class="bi bi-currency-rupee"></i>560</span>
+                  </div>
+                </div>
+                <div class="cartpopup addtocardbtn">
+                  <i class="bi bi-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-4 col-sm-6 ourproducts"
+            data-category="green-tea"
+          >
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/Chamomile Mint Cinnamon Green Tea.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+                <div class="ddiv">
+                  <span>30% off</span>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="p-3 d-flex align-items-end justify-content-between">
+                <div>
+                  <div class="d-flex stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div>
+                    <p>Chamomile Mint Cinnamon Green Tea</p>
+                    <span><i class="bi bi-currency-rupee"></i>560</span>
+                  </div>
+                </div>
+                <div class="cartpopup addtocardbtn">
+                  <i class="bi bi-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-4 col-sm-6 ourproducts"
+            data-category="green-tea"
+          >
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/Gingermint Lemon Green Tea.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+                <div class="ddiv">
+                  <span>30% off</span>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="p-3 d-flex align-items-end justify-content-between">
+                <div>
+                  <div class="d-flex stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <div>
+                    <p>Gingermint Lemon Green Tea</p>
+                    <span><i class="bi bi-currency-rupee"></i>560</span>
+                  </div>
+                </div>
+                <div class="cartpopup addtocardbtn">
+                  <i class="bi bi-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-4 col-sm-6 ourproducts"
+            data-category="green-tea"
+          >
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/Lemon Tulsi Green Tea.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+                <div class="ddiv">
+                  <span>30% off</span>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="p-3 d-flex align-items-end justify-content-between">
+                <div>
+                  <div class="d-flex stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div>
+                    <p>Lemon Tulsi Green Tea</p>
+                    <span><i class="bi bi-currency-rupee"></i>560</span>
+                  </div>
+                </div>
+                <div class="cartpopup addtocardbtn">
+                  <i class="bi bi-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-4 col-sm-6 ourproducts"
+           data-category="green-tea"
+          >
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/Moringa Green Tea.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+                <div class="ddiv">
+                  <span>30% off</span>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="p-3 d-flex align-items-end justify-content-between">
+                <div>
+                  <div class="d-flex stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <div>
+                    <p>Moringa Green Tea</p>
+                    <span><i class="bi bi-currency-rupee"></i>560</span>
+                  </div>
+                </div>
+                <div class="cartpopup addtocardbtn">
+                  <i class="bi bi-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-4 col-sm-6 ourproducts"
+            data-category="green-tea"
+          >
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/Sweet Himalayan Green Tea.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+                <div class="ddiv">
+                  <span>30% off</span>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="p-3 d-flex align-items-end justify-content-between">
+                <div>
+                  <div class="d-flex stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <div>
+                    <p>Sweet Himalayan Green Tea</p>
+                    <span><i class="bi bi-currency-rupee"></i>560</span>
+                  </div>
+                </div>
+                <div class="cartpopup addtocardbtn">
+                  <i class="bi bi-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-4 col-sm-6 ourproducts"
+            data-category="herbal-tea"
+          >
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/Skin Glow Herbal Tea.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+                <div class="ddiv">
+                  <span>30% off</span>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="p-3 d-flex align-items-end justify-content-between">
+                <div>
+                  <div class="d-flex stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div>
+                    <p> Skin Glow Herbal Tea</p>
+                    <span><i class="bi bi-currency-rupee"></i>560</span>
+                  </div>
+                </div>
+                <div class="cartpopup addtocardbtn">
+                  <i class="bi bi-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-4 col-sm-6 ourproducts"
+            data-category="herbal-tea"
+          >
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/Slimming Herbal Healthy Green Tea.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+                <div class="ddiv">
+                  <span>30% off</span>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="p-3 d-flex align-items-end justify-content-between">
+                <div>
+                  <div class="d-flex stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <div>
+                    <p>Slimming Herbal Healthy Green Tea</p>
+                    <span><i class="bi bi-currency-rupee"></i>560</span>
+                  </div>
+                </div>
+                <div class="cartpopup addtocardbtn">
+                  <i class="bi bi-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div
+            class="col-xl-3 col-md-4 col-sm-6 ourproducts"
+            data-category="herbal-tea"
+          >
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/PCOS Relief Herbal Tea.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+                <div class="ddiv">
+                  <span>30% off</span>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="p-3 d-flex align-items-end justify-content-between">
+                <div>
+                  <div class="d-flex stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <div>
+                    <p>PCOS Relief Herbal Tea.</p>
+                    <span><i class="bi bi-currency-rupee"></i>560</span>
+                  </div>
+                </div>
+                <div class="cartpopup addtocardbtn">
+                  <i class="bi bi-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div
+            class="col-xl-3 col-md-4 col-sm-6 ourproducts"
+           data-category="herbal-tea"
+          >
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/Tridoshic Ayurvedic Herbal Tea.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+                <div class="ddiv">
+                  <span>30% off</span>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="p-3 d-flex align-items-end justify-content-between">
+                <div>
+                  <div class="d-flex stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <div>
+                    <p>Tridoshic Ayurvedic Herbal Tea</p>
+                    <span><i class="bi bi-currency-rupee"></i>560</span>
+                  </div>
+                </div>
+                <div class="cartpopup addtocardbtn">
+                  <i class="bi bi-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div
+            class="col-xl-3 col-md-4 col-sm-6 ourproducts"
+            data-category="herbal-tea"
+          >
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/Happy Heart Herbal Tree.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+                <div class="ddiv">
+                  <span>30% off</span>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="p-3 d-flex align-items-end justify-content-between">
+                <div>
+                  <div class="d-flex stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <div>
+                    <p> Happy Heart Herbal Tea</p>
+                    <span><i class="bi bi-currency-rupee"></i>560</span>
+                  </div>
+                </div>
+                <div class="cartpopup addtocardbtn">
+                  <i class="bi bi-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div
+            class="col-xl-3 col-md-4 col-sm-6 ourproducts"
+            data-category="herbal-tea"
+          >
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/Hibiscus Rush Herbal Tea.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+                <div class="ddiv">
+                  <span>30% off</span>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="p-3 d-flex align-items-end justify-content-between">
+                <div>
+                  <div class="d-flex stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <div>
+                    <p> Hibiscus Rush Herbal Tea</p>
+                    <span><i class="bi bi-currency-rupee"></i>560</span>
+                  </div>
+                </div>
+                <div class="cartpopup addtocardbtn">
+                  <i class="bi bi-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div
+            class="col-xl-3 col-md-4 col-sm-6 ourproducts"
+            data-category="black-tea"
+          >
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/Roasted Darjeeling Tea.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+                <div class="ddiv">
+                  <span>30% off</span>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="p-3 d-flex align-items-end justify-content-between">
+                <div>
+                  <div class="d-flex stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <div>
+                    <p> Roasted Darjeeling Tea</p>
+                    <span><i class="bi bi-currency-rupee"></i>560</span>
+                  </div>
+                </div>
+                <div class="cartpopup addtocardbtn">
+                  <i class="bi bi-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div
+            class="col-xl-3 col-md-4 col-sm-6 ourproducts"
+            data-category="black-tea"
+          >
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/Himalayan Wine Tea.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+                <div class="ddiv">
+                  <span>30% off</span>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="p-3 d-flex align-items-end justify-content-between">
+                <div>
+                  <div class="d-flex stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <div>
+                    <p> Himalayan Wine Tea</p>
+                    <span><i class="bi bi-currency-rupee"></i>560</span>
+                  </div>
+                </div>
+                <div class="cartpopup addtocardbtn">
+                  <i class="bi bi-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div
+            class="col-xl-3 col-md-4 col-sm-6 ourproducts"
+            data-category="black-tea"
+          >
+            <div class="cd">
+              <div>
+                <img
+                  src="web/images/products/Darjeeling Rose Black Tea.jpg"
+                  class="img-fluid imgattop"
+                  alt=""
+                />
+                <img
+                  src="web/images/products/product12newin.jpg"
+                  class="img-fluid imgatbottom"
+                  alt=""
+                />
+                <div class="ddiv">
+                  <span>30% off</span>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+              <div class="p-3 d-flex align-items-end justify-content-between">
+                <div>
+                  <div class="d-flex stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <div>
+                    <p> Darjeeling Rose Black Tea</p>
+                    <span><i class="bi bi-currency-rupee"></i>560</span>
+                  </div>
+                </div>
+                <div class="cartpopup addtocardbtn">
+                  <i class="bi bi-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="">
+      <div class="container-fluid">
+        <div class="row py-5">
+          <div class="col-xl-3 mb-xl-0 mb-5">
+            <div class="text-xl-start text-center">
+              <img src="web/images/IMG_1581.JPG" class="clickable" onclick="location.href='index.html'" width="100" alt="" />
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4 mb-md-0 mb-5">
+            <div>
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ourteam.html">Blogs</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4 mb-md-0 mb-5">
+            <div>
+              <h4>Our Services</h4>
+               <ul>
+                <li><a href="products.html">Retail</a></li>
+                <li><a href="index.html#ContactFormOnIndex">Luxe Experiences</a></li>
+                <li><a href="404.html">Franchise</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4">
+            <div>
+              <h4>Get In Touch</h4>
+              <ul>
+                <li>
+                  <a href="https://maps.app.goo.gl/C9pzJGsjS16N6mmZA" target="_blank"
+                    ><i class="bi bi-geo-alt"></i> &nbsp;2972 Westheimer Rd.
+                    Santa Ana, Illinois 85486</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto::info@ourchaigpt.com" target="_blank"
+                    ><i class="bi bi-envelope"></i> &nbsp;support@example.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+919958831204" target="_blank"
+                    ><i class="bi bi-telephone"></i> &nbsp;+91-99588 31204</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="socialmedia">
+            <a href="https://www.instagram.com/_chaigpt_?igsh=MXdxc2g3d25kdmppOA%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/chaigpt-ai/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/919958831204"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="cpy mt-5 py-3 px-1">
+        <a href="tssgtech.com"
+          >Copyright © 2025 ChaiGPT. All rights reserved. Design by
+          Tssg-Tech.</a
+        >
+      </div>
+    </footer>
+
+    <!-- product description page -->
+    <section class="proddesc">
+      <div>
+        <div class="position-relative">
+          <img src="web/images/products/product12newin.jpg" class="" alt="" />
+          <i class="bi bi-arrow-left backk"></i>
+        </div>
+        <div class="p-xl-4 p-sm-3 p-2">
+          <div class="divtext">
+            <h1>Ayurvedic Detox Green Tea</h1>
+            <span>
+              Crafted with ancient Ayurvedic wisdom, this detox blend gently
+              purifies the body while restoring natural balance. A refreshing
+              green tea designed to cleanse, energize, and renew your everyday
+              ritual</span
+            >
+            <p><i class="bi bi-currency-rupee"></i>590</p>
+            <!-- <div class="d-flex">
+            <div class=" me-4">
+              <a href="" class="btn btn-success">Shop Now</a>
+            </div> -->
+            <div class="cartpopup">
+              <a href="" class="btn btn-success">Add to cart</a>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+
+    <script src="web/js/script.js"></script>
+    <script src="web/js/product.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

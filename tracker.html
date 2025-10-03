@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level Tracker</title>
+<link rel="stylesheet" href="web/css/tracker.css">
+</head>
+<body class="bodytag">
+
+  <h1>Level & Coupon Tracker</h1>
+
+ 
+<style>
+  .trackerparent{
+    height: 1rem;
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid red;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    --progress: 0%; 
+  }
+  .trackerparent::after{
+    content: "";
+    width: var(--progress);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    border-radius: 30px;
+  }
+ .trackerparent .points{
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: black;
+  border-radius: 50%;
+
+ }
+  
+</style>
+  <div class="trackerparent">
+    <div class="points"></div>
+    <div class="points"></div>
+    <div class="points"></div>
+    <div class="points"></div>
+    <div class="points"></div>
+    <div class="points"></div>
+    <div class="points"></div>
+  </div>
+
+  
+  <script>
+    let totalpurchase = 7500;
+    let level = [2500, 7500, 15000, 30000, 60000, 100000]
+    let mypercent = 0.1667;
+    let newpercent, remainingpurchaseafterlastlevel, myvalue, percent;
+    if(totalpurchase <= level[0] && totalpurchase > "0"){
+      if(totalpurchase === level[0]){
+        newpercent = 16.67
+      }
+      else{
+console.log(`totalpurchase < "2500" && totalpurchase > "0"`);
+ remainingpurchaseafterlastlevel = totalpurchase
+ myvalue=level[1];
+ percent = (remainingpurchaseafterlastlevel / myvalue) * 100
+ newpercent = 0.1667 * percent
+      }
+    }
+    else if(totalpurchase <= level[1] && totalpurchase > level[0]){
+       if(totalpurchase === level[1]){
+         newpercent = 16.67 * 2
+        // console.log(newpercent.toFixed(2) +"77");
+        
+      }
+      else{
+console.log(`totalpurchase < "7500" && totalpurchase > "2500"`);
+remainingpurchaseafterlastlevel = totalpurchase-level[0]
+myvalue=level[1]-level[0];
+percent = (remainingpurchaseafterlastlevel / myvalue) * 100
+newpercent =16.67 + (0.1667 * percent)
+      }
+    }
+     else if(totalpurchase <= level[2] && totalpurchase > level[1]){
+      if(totalpurchase === level[2]){
+         newpercent = 16.67 * 3
+      }
+      else{
+console.log(`totalpurchase < "15000" && totalpurchase > "7500"`);
+remainingpurchaseafterlastlevel = totalpurchase-level[1]
+myvalue=level[2]-level[1];
+percent = (remainingpurchaseafterlastlevel / myvalue) * 100
+newpercent =16.67 + 16.67 + (0.1667 * percent)
+    }
+  }
+
+     else if(totalpurchase <= level[3] && totalpurchase > level[2]){
+      if(totalpurchase === level[3]){
+         newpercent = 16.67 * 4
+      }
+      else{
+console.log(`totalpurchase < "30000" && totalpurchase > "15000"`);
+remainingpurchaseafterlastlevel = totalpurchase-level[2]
+myvalue=level[3]-level[2];
+percent = (remainingpurchaseafterlastlevel / myvalue) * 100
+newpercent =16.67 + 16.67 + 16.67 + (0.1667 * percent)
+    }
+  }
+     else if(totalpurchase <= level[4] && totalpurchase > level[3]){
+      if(totalpurchase === level[4]){
+         newpercent = 16.67 * 5
+      }
+      else{
+console.log(`totalpurchase < "60000" && totalpurchase > "30000"`);
+remainingpurchaseafterlastlevel = totalpurchase-level[3]
+myvalue=level[4]-level[3];
+percent = (remainingpurchaseafterlastlevel / myvalue) * 100
+newpercent =16.67 + 16.67 + 16.67 + 16.67 + (0.1667 * percent)
+    }
+  }
+     else if(totalpurchase <= level[5] && totalpurchase > level[4]){
+      if(totalpurchase === level[5]){
+         newpercent = 16.67 * 6
+      }
+      else{
+console.log(`totalpurchase < "60000" && totalpurchase > "30000"`);
+remainingpurchaseafterlastlevel = totalpurchase-level[4]
+myvalue=level[5]-level[4];
+percent = (remainingpurchaseafterlastlevel / myvalue) * 100
+newpercent =16.67 + 16.67 + 16.67 + 16.67 + 16.67 + (0.1667 * percent)
+    }
+  }
+    else{
+      console.log("error");
+      
+    }
+document.querySelector(".trackerparent")
+        .style.setProperty("--progress", newpercent + "%");
+        // document.querySelector(".trackerparent")
+        // .style.setProperty("--progress", newpercent.toFixed(2) + "%");
+    // const levelPoints = [25, 50, 75, 100, 125];
+
+    // function updateTracker() {
+    //   let points = parseInt(document.getElementById("pointsInput").value) || 0;
+
+    //   Reset all levels & coupons
+    //   document.querySelectorAll(".level").forEach(l => l.classList.remove("completed"));
+    //   document.querySelectorAll(".coupon").forEach(c => c.classList.remove("unlocked"));
+
+    //   Unlock according to points
+    //   levelPoints.forEach((limit, index) => {
+    //     if (points >= limit) {
+    //       document.getElementById("level" + (index+1)).classList.add("completed");
+    //       document.getElementById("coupon" + (index+1)).classList.add("unlocked");
+    //     }
+    //   });
+    // }
+  </script>
+
+</body>
+</html>

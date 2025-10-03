@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <link rel="Icon" type="Image/JPG" href="web/images/IMG_1581.JPG">
+    <link rel="stylesheet" href="web/css/style.css">
+    <style>
+      section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+        section > div {
+            height: 95vh;
+            width: 95vw;
+            display: flex; align-items: center; justify-content: center;
+flex-direction: column;
+        }
+         section h1{
+            color: rgb(156, 12, 12);
+            font-size: 10rem;
+            margin: 0;
+        }
+         section p{
+            color: rgb(1, 83, 1);
+            font-size: 3rem;
+            margin: 0;
+        }
+         img{
+            width: 100%;
+        }
+        @media (min-width:1200px) {
+             section > div {
+flex-direction: row;
+        }
+         section h1{
+            font-size: 15rem;
+        }
+         section p{
+            font-size: 4rem;
+        }
+         section > div > div {
+margin-right: 1rem;
+        }
+       
+        }
+        @media (max-width:576px) {
+             
+         section h1{
+            font-size: 5rem;
+        }
+         section p{
+            font-size: 2rem;
+        }
+        
+        }
+        @media (max-width:1200px) and (min-width:576px) {
+         section > div{
+margin-top: 1.5rem;
+        }
+        }
+        
+    </style>
+
+</head>
+<body class="roboto-font">
+    <section>
+        <div>
+        <div>
+            <img src="web/images/404-img.png" alt="">
+        </div>
+        <div>
+            <h1>404</h1>
+            <small>Sorry</small>
+            <p>We can't find the page
+                <br>
+                you are looking for
+            </p>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
