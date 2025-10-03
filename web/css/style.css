@@ -282,7 +282,6 @@ header {
       left: 0;
       color: #fff;
       z-index: 1;
-      display: flex;
       padding: 1rem;
       border-radius: 30px;
       background-color: #000000b2;
@@ -296,16 +295,7 @@ header {
       font-weight: normal;
 font-size: 14px;
     }
-  @media (max-width:992px) and (min-width:768px) and (max-width:576px){
-    .visionfoot{
-      display: block;
-    }
-  }
-    @media (max-width:576px){
-    .visionfoot{
-      display: block;
-    }
-  }
+
     .visionfootdiv{
       position: relative;
       border-radius:0 0 30px 30px;
@@ -315,17 +305,7 @@ font-size: 14px;
      border-radius:0 0 30px 30px;
 
     }
-     /* .visionfootdiv::after{
-     content: "";
-     position: absolute;
-     background-color: rgba(0, 0, 0, 0.308);
-     left: 0;
-     top:0;
-     height: 100%;
-     width: 100%;
-     z-index: 0;
-     border-radius:0 0 30px 30px;
-    } */
+   
     .bi-pin-angle-fill{
       font-size: 4rem;
       display: inline-block;
@@ -927,7 +907,7 @@ border-radius: 30px;
 }
 .adrow{
 display: flex;
-align-items: center;
+align-items: start;
 justify-content: center;
 /* flex-direction: column; */
 text-align: center;
@@ -1460,6 +1440,12 @@ margin-top: 0.5rem;
     justify-content: center;
   
   }
+  /* @media (max-width: 425px) {
+  .login-container {
+    align-items: flex-start;   
+    padding-top: 1rem;       
+  }
+} */
 
    .login-container .container {
 width: fit-content;
@@ -1844,6 +1830,7 @@ transform:translateX(-50%)
     /* coupons */
     .couponcard{
       position: relative;
+      box-shadow: 0px 2px 5px rgb(66, 66, 66);
     }
     .couponcard::after{
 content: "";
