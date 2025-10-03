@@ -40,6 +40,10 @@ ul li {
           border-radius: 8px;
           cursor: pointer;
   }
+  video::-internal-media-controls-download-button {
+  display: none;
+  z-index: -1;
+}
 /* icon at bottom */
 .iconatbtm{
   position: fixed;
