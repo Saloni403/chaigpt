@@ -54,7 +54,7 @@
                 >SERVICES <i class="bi bi-chevron-right itsdrop"></i
               ></a>
               <ul class="sublist">
-                <li><a href="products.html">RETAIL</a></li>
+                <li><a href="#" class="retailsec">RETAIL</a></li>
                 <li><a href="index.html#ContactFormOnIndex">LUXE EXPERIENCES</a></li>
                  <li><a href="404.html">FRANCHISE</a></li>
               </ul>
@@ -87,7 +87,7 @@
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="404.html">FRANCHISE</a></li>
-          <li><a href="products.html">RETAIL</a></li>
+          <li><a href="#" class="retailsec">RETAIL</a></li>
           <li><a href="index.html#ContactFormOnIndex">LUXE EXPERIENCES</a></li>
           <li><a href="ourteam.html">BLOG</a></li>
           <li><a href="aboutus.html">ABOUT US</a></li>
@@ -128,7 +128,7 @@
 </style>
 
         <!-- our blogs -->
-    <!-- <section class="ourblogs my-5">
+    <section class="ourblogs my-5">
       <div class="container-fluid">
         <div class="mb-5 text-center">
           <h1>The ChaiGPT™ Journal</h1>
@@ -271,7 +271,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
 
     <!-- gallery -->
@@ -362,6 +362,7 @@ position: absolute;transform: translate(-200%, 100%);
                 <li><a href="ourteam.html">Blogs</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="policy.html">Policies</a></li>
               </ul>
             </div>
           </div>
@@ -369,7 +370,7 @@ position: absolute;transform: translate(-200%, 100%);
             <div>
               <h4>Our Services</h4>
                <ul>
-                <li><a href="products.html">Retail</a></li>
+                <li><a href="#" class="retailsec">Retail</a></li>
                 <li><a href="index.html#ContactFormOnIndex">Luxe Experiences</a></li>
                 <li><a href="404.html">Franchise</a></li>
               </ul>
@@ -407,14 +408,23 @@ position: absolute;transform: translate(-200%, 100%);
           </div>
         </div>
       </div>
-      <div class="cpy mt-5 py-3 px-1">
-        <a href="tssgtech.com"
-          >Copyright © 2025 ChaiGPT. All rights reserved. Design by
-          Tssg-Tech.</a
-        >
+       <div class="cpy mt-5 py-3 px-1">
+        <a href="https://tssgtech.com/"
+          >© 2025 All Rights Reserved | ChaiGPT™ — a product of Auric Brews Pvt. Ltd. | Designed by Tssg-Tech</a>
       </div>
     </footer>
 
+<!-- my custome popup -->
+<section class="pincode">
+    <div>
+      <h4>Enter Your PIN Code :</h4>
+      <input type="text" placeholder="e.g. 203408">
+     
+      <div >
+      <a href="products.html" class="btn btn-success">Submit</a>
+      </div>
+    </div>
+</section>
 
     <script src="web/js/script.js"></script>
      <script src="web/js/indexservices.js"></script>
@@ -429,6 +439,13 @@ position: absolute;transform: translate(-200%, 100%);
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+
+       document.querySelectorAll(".retailsec").forEach(retail=>{
+        retail.addEventListener("click",()=>{
+          document.querySelector(".pincode").classList.add("show");
+        })
+      })
+
     </script>
   </body>
 </html>

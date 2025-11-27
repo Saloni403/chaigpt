@@ -48,15 +48,14 @@
       <span>Guardians of Pure Taste</span>
     </section>
     <header
-      style="
+    style="
         position: absolute;
         background: linear-gradient(
           to right,
           rgb(3, 6, 15) 30%,
           #090b159c,
           #090b1561
-        );
-      "
+        );"
       class="py-1"
     >
       <nav class="d-flex align-items-center justify-content-between">
@@ -77,7 +76,7 @@
                 >SERVICES <i class="bi bi-chevron-right itsdrop"></i
               ></a>
               <ul class="sublist">
-                <li><a href="products.html">RETAIL</a></li>
+                <li><a href="#" class="retailsec">RETAIL</a></li>
                 <li><a href="index.html#ContactFormOnIndex">LUXE EXPERIENCES</a></li>
                  <li><a href="404.html">FRANCHISE</a></li>
               </ul>
@@ -110,7 +109,7 @@
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="404.html">FRANCHISE</a></li>
-          <li><a href="products.html">RETAIL</a></li>
+          <li><a href="#" class="retailsec">RETAIL</a></li>
           <li><a href="index.html#ContactFormOnIndex">LUXE EXPERIENCES</a></li>
           <li><a href="ourteam.html">BLOGS</a></li>
           <li><a href="aboutus.html">ABOUT US</a></li>
@@ -205,7 +204,7 @@
         <div class="row gy-5">
          
           <div class="col-xxl-4 col-lg-6">
-            <div class="rounded clickable"  onclick="location.href='products.html'">
+            <div class="rounded clickable retailsec ">
               <h4>RETAIL</h4>
               <div class="frediv servdiv">
                 <img
@@ -654,6 +653,7 @@
                 <li><a href="ourteam.html">Blogs</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="policy.html">Policies</a></li>
               </ul>
             </div>
           </div>
@@ -661,7 +661,7 @@
             <div>
               <h4>Our Services</h4>
                <ul>
-                <li><a href="products.html">Retail</a></li>
+                <li><a href="#" class="retailsec">Retail</a></li>
                 <li><a href="index.html#ContactFormOnIndex">Luxe Experiences</a></li>
                 <li><a href="404.html">Franchise</a></li>
               </ul>
@@ -700,10 +700,8 @@
         </div>
       </div>
       <div class="cpy mt-5 py-3 px-1">
-        <a href="tssgtech.com"
-          >Copyright © 2025 ChaiGPT. All rights reserved. Design by
-          Tssg-Tech.</a
-        >
+        <a href="https://tssgtech.com/"
+          >© 2025 All Rights Reserved | ChaiGPT™ — a product of Auric Brews Pvt. Ltd. | Designed by Tssg-Tech</a>
       </div>
     </footer>
 
@@ -735,11 +733,23 @@
          <div class="Signup-box w-100">
           <h2>Begin Your <span>Connoisseur Voyage</span></h2>
           <form>
-            <input type="text" class="form-control" placeholder="Enter Name" required>
+            <div class="d-flex" style="gap: 10px; align-items: center;">
+              <select id="title" class="form-control" style="width: 100px;" required="">
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Ms">Ms</option>
+              </select>
+
+              <input type="text" id="name" class="form-control" placeholder="Enter Name" required="">
+            </div>
             <input type="tel" class="form-control" placeholder="Enter Phone" required>
             <input type="email" class="form-control" placeholder="Enter Email" required>
-            <input type="password" class="form-control" placeholder="Enter Password" required>
-            <button type="submit" class="btn btn-success" onclick="location.href='products.html'">Access</button>
+            <input type="number" class="form-control" placeholder="Enter PIN" required>
+            <label for="dob" class="text-white">Date of Birth:</label>
+            <input type="date" id="dob" class="form-control" required="">
+            <label for="password" style="color: aliceblue; font-weight: normal; font-size: 12px;">Password should be minimum 6 characters.</label>
+            <input type="password" id="password" class="form-control" placeholder="Enter Password" required>
+           <br> <button type="submit" class="btn btn-success" onclick="location.href='products.html'">Access</button>
           </form>
           
           <div class="extra-links">
@@ -752,6 +762,19 @@
     </div>
   </div>
 </section>
+
+<!-- my custome popup -->
+<section class="pincode">
+    <div>
+      <h4>Enter Your PIN Code :</h4>
+      <input type="text" placeholder="e.g. 203408">
+     
+      <div >
+      <a href="products.html" class="btn btn-success">Submit</a>
+      </div>
+    </div>
+</section>
+
 
     <script src="web/js/script.js"></script>
     <script src="web/js/indexservices.js"></script>
@@ -767,6 +790,11 @@
     <script>
       AOS.init();
      
+      document.querySelectorAll(".retailsec").forEach(retail=>{
+        retail.addEventListener("click",()=>{
+          document.querySelector(".pincode").classList.add("show");
+        })
+      })
     </script>
   </body>
 </html>
